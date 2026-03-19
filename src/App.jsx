@@ -2359,10 +2359,405 @@ const evenMoreQuestions = [
   }
 ];
 
+
 questionBank.push(...evenMoreQuestions);
 
+const megaQuestions = [
+  // Kafli 4 – Vöruhús gagna (Data Warehouse, DWH)
+  {
+    id: "k4-19",
+    section: "k4",
+    sectionLabel: "Kafli 4 – Vöruhús gagna (Data Warehouse, DWH)",
+    type: "mcq",
+    prompt: "Hvaða lýsing á rekstrargagnageymslu (Operational Data Store, ODS) er réttust miðað við glærurnar?",
+    options: [
+      "Les oft gögn beint úr grunnkerfi, gerir lágmarks hreinsun og nýtist gjarnan sem millilag",
+      "Er alltaf fullbúið samstæðu-vöruhús (Enterprise Data Warehouse, EDW) með allri sögu",
+      "Er eingöngu notað fyrir óskipulögð gögn (Unstructured Data)",
+      "Er sérhæfð mælitafla (Fact Table) fyrir eina deild"
+    ],
+    answer: "Les oft gögn beint úr grunnkerfi, gerir lágmarks hreinsun og nýtist gjarnan sem millilag",
+    explanation: "ODS er í glærunum lýst sem nær rauntíma afriti með lágmarks vinnslu og oft sem millilagi."
+  },
+  {
+    id: "k4-20",
+    section: "k4",
+    sectionLabel: "Kafli 4 – Vöruhús gagna (Data Warehouse, DWH)",
+    type: "mcq",
+    prompt: "Hvaða atriði er sterkasta ástæðan fyrir því að vöruhús gagna (Data Warehouse, DWH) einfaldar óundirbúnar greiningar (Ad-hoc Analysis)?",
+    options: [
+      "Samræmd hreinsun, samræmdar skilgreiningar og söguleg gögn á stöðluðu formi",
+      "Að gögnin séu alltaf hrá (Raw) og ósamræmd svo notendur geti túlkað þau frjálst",
+      "Að ekkert ETL-flæði (Extract, Transform, Load) sé notað",
+      "Að grunnkerfin séu hönnuð eingöngu fyrir greiningar"
+    ],
+    answer: "Samræmd hreinsun, samræmdar skilgreiningar og söguleg gögn á stöðluðu formi",
+    explanation: "Glærurnar leggja áherslu á samræmda sýn, samræmdar skilgreiningar og sögu fyrir greiningar."
+  },
+  {
+    id: "k4-21",
+    section: "k4",
+    sectionLabel: "Kafli 4 – Vöruhús gagna (Data Warehouse, DWH)",
+    type: "mcq",
+    prompt: "Hvaða ETL-skref (Extract, Transform, Load) er líklegast að sannreyna gæði gagna áður en þau haldast áfram í flæðinu?",
+    options: [
+      "Staðfesting (Validate)",
+      "Uppfletting (Lookup)",
+      "Hreinsun vinnslutaflna (Cleanup)",
+      "Birting (Report)"
+    ],
+    answer: "Staðfesting (Validate)",
+    explanation: "Validate er skrefið þar sem gögn eru prófuð og metin áður en þau haldast áfram."
+  },
+  {
+    id: "k4-22",
+    section: "k4",
+    sectionLabel: "Kafli 4 – Vöruhús gagna (Data Warehouse, DWH)",
+    type: "mcq",
+    prompt: "Hvaða fullyrðing um öryggi og stjórnun (Security and Administration) í vöruhúsi gagna er réttust?",
+    options: [
+      "Ofurnotendur (Superusers) geta þurft beinan aðgang og því þarf skýr ferli um réttindi og eftirlit",
+      "Vöruhús gagna þarf yfirleitt minna eftirlit en flest önnur kerfi",
+      "Aðskilnaður milli rekstrarkerfa og notenda gengur alltaf fullkomlega upp í vöruhúsi",
+      "Aðgangsstýring skiptir litlu máli svo lengi sem skýrslur eru til"
+    ],
+    answer: "Ofurnotendur (Superusers) geta þurft beinan aðgang og því þarf skýr ferli um réttindi og eftirlit",
+    explanation: "Þetta er sérstaklega nefnt í glærunum um öryggi og stjórnun vöruhúsa gagna."
+  },
+  {
+    id: "k4-23",
+    section: "k4",
+    sectionLabel: "Kafli 4 – Vöruhús gagna (Data Warehouse, DWH)",
+    type: "binary",
+    prompt: "Rétt eða rangt: Gagnalón (Data Lake) tekur aðeins við skipulögðum gögnum (Structured Data) en ekki hálf-skipulögðum (Semi-Structured Data) eða óskipulögðum gögnum (Unstructured Data).",
+    options: ["Rétt", "Rangt"],
+    answer: "Rangt",
+    explanation: "Glærurnar segja að gagnalón taki við öllum tegundum gagna og jafnvel meira magni en hefðbundið EDW/DWH."
+  },
+  {
+    id: "k4-24",
+    section: "k4",
+    sectionLabel: "Kafli 4 – Vöruhús gagna (Data Warehouse, DWH)",
+    type: "mcq",
+    prompt: "Hvaða þróunarstefna (Trend) er nefnd sem sérstaklega gagnleg fyrir rauntímagreiningar í vöruhúsum gagna?",
+    options: [
+      "In-memory geymsla (In-Memory Storage)",
+      "Stofngögn (Masterdata)",
+      "Degenerate víddir (Degenerate Dimensions)",
+      "Spjallmenni (Chatbots)"
+    ],
+    answer: "In-memory geymsla (In-Memory Storage)",
+    explanation: "Glærurnar nefna in-memory geymslu sem gagnlega fyrir rauntímagreiningar."
+  },
 
-const countOptions = [10, 15, 20, 30, 40, 50, 60, 80, 100, "all"];
+  // Kafli 5 – Gagnanám (Data Mining)
+  {
+    id: "k5-19",
+    section: "k5",
+    sectionLabel: "Kafli 5 – Gagnanám (Data Mining)",
+    type: "mcq",
+    prompt: "Hvaða aðferð (Method) er líklegust þegar markmiðið er að finna sambönd milli vara eða einkenna með því að byggja upp sífellt stærri mynstur?",
+    options: [
+      "Sambandsgreining (Association Analysis)",
+      "Flokkun (Classification)",
+      "Línuleg bestun (Linear Optimization)",
+      "Nafngreining (Named Entity Recognition, NER)"
+    ],
+    answer: "Sambandsgreining (Association Analysis)",
+    explanation: "Association byggir upp hópa þar sem n-sambönd eru til staðar og bætir einum hlut í einu við leitina."
+  },
+  {
+    id: "k5-20",
+    section: "k5",
+    sectionLabel: "Kafli 5 – Gagnanám (Data Mining)",
+    type: "mcq",
+    prompt: "Hvaða mælikvarði (Metric) er nefndur í glærunum til að meta gæði aðhvarfsgreiningar (Regression Analysis)?",
+    options: [
+      "R²",
+      "VOC (Voice of the Customer)",
+      "SHAP",
+      "OLAP"
+    ],
+    answer: "R²",
+    explanation: "R² er nefnt sem mælikvarði á gæði niðurstöðu í aðhvarfsgreiningu."
+  },
+  {
+    id: "k5-21",
+    section: "k5",
+    sectionLabel: "Kafli 5 – Gagnanám (Data Mining)",
+    type: "mcq",
+    prompt: "Hvaða fullyrðing um tvíkosta aðhvarfsgreiningu (Logistic Regression) er réttust?",
+    options: [
+      "Hún er notuð þegar niðurstaðan er oft Já/Nei og markmiðið er að meta hvort atburður muni gerast",
+      "Hún er aðeins notuð fyrir myndgreiningu (Image Recognition)",
+      "Hún finnur alltaf hópa án þess að niðurstaða sé fyrirfram þekkt",
+      "Hún er óviðkomandi spádómsgreiningum (Predictive Analytics)"
+    ],
+    answer: "Hún er notuð þegar niðurstaðan er oft Já/Nei og markmiðið er að meta hvort atburður muni gerast",
+    explanation: "Glærurnar lýsa logistic regression nákvæmlega með þessum hætti."
+  },
+  {
+    id: "k5-22",
+    section: "k5",
+    sectionLabel: "Kafli 5 – Gagnanám (Data Mining)",
+    type: "mcq",
+    prompt: "Hvaða kostur við sameinaðar niðurstöður mismunandi líkana (Ensemble) er sérstaklega nefndur?",
+    options: [
+      "Aukin áreiðanleiki (Reliability) og nákvæmni (Accuracy)",
+      "Að engin þörf sé lengur á að prófa fleiri en eitt líkan",
+      "Að líkönin verði alltaf einfaldari í útskýringu en áður",
+      "Að samantektir (Summaries) úr texta verði sjálfkrafa betri"
+    ],
+    answer: "Aukin áreiðanleiki (Reliability) og nákvæmni (Accuracy)",
+    explanation: "Ensemble er í glærunum tengt við meiri áreiðanleika og nákvæmni."
+  },
+  {
+    id: "k5-23",
+    section: "k5",
+    sectionLabel: "Kafli 5 – Gagnanám (Data Mining)",
+    type: "binary",
+    prompt: "Rétt eða rangt: Ákvörðunartökutré (Decision Tree) er í glærunum tengt því að svar við einni breytu afmarki mögulegar niðurstöður.",
+    options: ["Rétt", "Rangt"],
+    answer: "Rétt",
+    explanation: "Þetta er bein lýsing í glærunum á decision trees."
+  },
+  {
+    id: "k5-24",
+    section: "k5",
+    sectionLabel: "Kafli 5 – Gagnanám (Data Mining)",
+    type: "mcq",
+    prompt: "Hvaða aðferð (Method) er líklegust ef markmiðið er að skipta svipuðum skjölum eða viðskiptavinum í hópa án þess að hóparnir séu skilgreindir fyrirfram?",
+    options: [
+      "Hópun (Clustering)",
+      "Efnisflokkun (Categorization)",
+      "Tvíkosta aðhvarfsgreining (Logistic Regression)",
+      "Markleit (Goal-Seek)"
+    ],
+    answer: "Hópun (Clustering)",
+    explanation: "Clustering er einmitt notað þegar hópar eru ekki skilgreindir fyrirfram."
+  },
+
+  // Kafli 7 – Djúpnám (Deep Learning, DL)
+  {
+    id: "k7-19",
+    section: "k7",
+    sectionLabel: "Kafli 7 – Djúpnám (Deep Learning, DL)",
+    type: "mcq",
+    prompt: "Hvaða atriði er nefnt sem drifkraftur (Driver) fyrir hraða þróun djúpra tauganeta (Deep Neural Networks, DNN)?",
+    options: [
+      "Aukin geta vélbúnaðar, gagnagnótt og framþróun í bestun",
+      "Að gögn hafi orðið minni og einfaldari",
+      "Að öll líkön séu orðin fullkomlega útskýrð",
+      "Að textanám hafi leyst af hólmi vélrænt nám (Machine Learning, ML)"
+    ],
+    answer: "Aukin geta vélbúnaðar, gagnagnótt og framþróun í bestun",
+    explanation: "Þetta er nákvæm upptalning úr glærunum um DNN."
+  },
+  {
+    id: "k7-20",
+    section: "k7",
+    sectionLabel: "Kafli 7 – Djúpnám (Deep Learning, DL)",
+    type: "mcq",
+    prompt: "Hvaða aðferð (Method) myndir þú helst velja ef þú vilt breyta einu inntaksgildi og skilja staðbundin áhrif þess á niðurstöðu líkans?",
+    options: [
+      "LIME",
+      "SHAP",
+      "CNN",
+      "Ensemble"
+    ],
+    answer: "LIME",
+    explanation: "LIME er í glærunum tengt við að breyta einu inntaksgildi til að skilja niðurstöður betur."
+  },
+  {
+    id: "k7-21",
+    section: "k7",
+    sectionLabel: "Kafli 7 – Djúpnám (Deep Learning, DL)",
+    type: "mcq",
+    prompt: "Hvaða lýsing á samvöfunartauganeti (Convolutional Neural Network, CNN) er réttust?",
+    options: [
+      "Hentar sérstaklega vel fyrir myndgreiningu (Image Recognition) og getur greint línur, lögun og áferð",
+      "Hentar fyrst og fremst fyrir tímaröð gagna (Time Series) og orðaraðir",
+      "Er fyrst og fremst aðferðafræði fyrir gagnamörkuð (Data Marts)",
+      "Er einfaldlega annað orð yfir aðhvarfsgreiningu (Regression)"
+    ],
+    answer: "Hentar sérstaklega vel fyrir myndgreiningu (Image Recognition) og getur greint línur, lögun og áferð",
+    explanation: "Glærurnar tengja CNN sérstaklega við myndgreiningu."
+  },
+  {
+    id: "k7-22",
+    section: "k7",
+    sectionLabel: "Kafli 7 – Djúpnám (Deep Learning, DL)",
+    type: "mcq",
+    prompt: "Hvaða samsetning er réttust fyrir endurkvæm tauganet (Recurrent Neural Networks, RNN) og LSTM (Long Short-Term Memory)?",
+    options: [
+      "Texti, tal og tímaraðir þar sem fyrri niðurstöður skipta máli fyrir næstu",
+      "Aðeins myndir þar sem lögun og áferð skipta máli",
+      "Aðeins ETL-flæði (Extract, Transform, Load) í vöruhúsi gagna",
+      "Aðeins static mapping töflur"
+    ],
+    answer: "Texti, tal og tímaraðir þar sem fyrri niðurstöður skipta máli fyrir næstu",
+    explanation: "RNN og sérstaklega LSTM eru í glærunum tengd við texta, tal og tímaraðir."
+  },
+  {
+    id: "k7-23",
+    section: "k7",
+    sectionLabel: "Kafli 7 – Djúpnám (Deep Learning, DL)",
+    type: "binary",
+    prompt: "Rétt eða rangt: Í glærunum er tekið fram að stærri og flóknari tauganet geti á endanum skilað betri niðurstöðum, en séu jafnframt erfiðari að útskýra.",
+    options: ["Rétt", "Rangt"],
+    answer: "Rétt",
+    explanation: "Þetta er kjarni glæranna um að tauganet séu svartur kassi."
+  },
+  {
+    id: "k7-24",
+    section: "k7",
+    sectionLabel: "Kafli 7 – Djúpnám (Deep Learning, DL)",
+    type: "mcq",
+    prompt: "Hvaða dæmi úr glærunum bendir helst til þess að djúpnám eða gervigreind geti minnkað fölsk jákvæð tilvik (False Positives) í flóknum rekstri?",
+    options: [
+      "Svindlgreining hjá banka þar sem hit-rate jókst og false positives lækkuðu",
+      "Type 2 vídd (Dimension) með valid-from og current-flag",
+      "Static vörpunartafla (Mapping Table)",
+      "Samantekt (Summarization) á löngu skjali"
+    ],
+    answer: "Svindlgreining hjá banka þar sem hit-rate jókst og false positives lækkuðu",
+    explanation: "Glærurnar um Danske Bank taka þetta dæmi sérstaklega."
+  },
+
+  // Högun (Architecture) / Kimball / Inmon / víddir
+  {
+    id: "hx-19",
+    section: "hx",
+    sectionLabel: "Högun (Architecture) – Kimball, Inmon og víddir (Dimensions)",
+    type: "mcq",
+    prompt: "Hvaða fullyrðing um Kimball-aðferðafræði (Kimball Methodology) er réttust?",
+    options: [
+      "Áhersla á stjörnulíkan (Star Schema), viðskiptaferla og gagnamarkaði út frá viðskiptaþörf",
+      "Áhersla á miðlægt 3NF vöruhús (Third Normal Form Warehouse) áður en nokkuð annað er hannað",
+      "Áhersla á að geyma öll gögn hrá á diski án vídda og mæligilda",
+      "Áhersla á að sleppa skýrslutólum (Reporting Tools) og einbeita sér að grunnkerfum"
+    ],
+    answer: "Áhersla á stjörnulíkan (Star Schema), viðskiptaferla og gagnamarkaði út frá viðskiptaþörf",
+    explanation: "Þetta er bein lýsing á Kimball nálguninni í glærunum."
+  },
+  {
+    id: "hx-20",
+    section: "hx",
+    sectionLabel: "Högun (Architecture) – Kimball, Inmon og víddir (Dimensions)",
+    type: "mcq",
+    prompt: "Hvaða fullyrðing um Inmon-aðferðafræði (Inmon Methodology) er réttust?",
+    options: [
+      "Top-down nálgun með miðlægu vöruhúsi, 3NF hönnun og áherslu á samþættingu og samræmi",
+      "Bottom-up nálgun sem byrjar alltaf á stakri fact töflu",
+      "Aðferð sem er fyrst og fremst fyrir óskipulögð gögn (Unstructured Data)",
+      "Aðferð sem hentar aðeins litlum fyrirtækjum með engin söguleg gögn"
+    ],
+    answer: "Top-down nálgun með miðlægu vöruhúsi, 3NF hönnun og áherslu á samþættingu og samræmi",
+    explanation: "Þetta er kjarninn í Inmon samkvæmt glærunum."
+  },
+  {
+    id: "hx-21",
+    section: "hx",
+    sectionLabel: "Högun (Architecture) – Kimball, Inmon og víddir (Dimensions)",
+    type: "mcq",
+    prompt: "Hvaða víddartegund (Dimension Type) á best við ef sama dagsetningarvídd (Date Dimension) er notuð sem pöntunardagur (Order Date), sendingardagur (Ship Date) og afhendingardagur (Delivery Date)?",
+    options: [
+      "Hlutverkavídd (Role-Playing Dimension)",
+      "Óeiginleg vídd (Degenerate Dimension)",
+      "Sameiginleg vídd (Common Dimension)",
+      "Snjókornalíkan (Snowflake Schema)"
+    ],
+    answer: "Hlutverkavídd (Role-Playing Dimension)",
+    explanation: "Þetta er klassískt dæmi um role-playing dimension."
+  },
+  {
+    id: "hx-22",
+    section: "hx",
+    sectionLabel: "Högun (Architecture) – Kimball, Inmon og víddir (Dimensions)",
+    type: "mcq",
+    prompt: "Hvaða lýsing á óeiginlegri vídd (Degenerate Dimension) er réttust?",
+    options: [
+      "Víddarlíkt gildi sem er oft geymt beint í mælitöflu (Fact Table), eins og pöntunarnúmer",
+      "Vídd sem geymir fulla sögu með valid-from/to og current-flag",
+      "Vídd sem er notuð í mörgum gagnamörkuðum (Data Marts)",
+      "Vídd sem inniheldur aðeins lýsigögn (Metadata)"
+    ],
+    answer: "Víddarlíkt gildi sem er oft geymt beint í mælitöflu (Fact Table), eins og pöntunarnúmer",
+    explanation: "Glærurnar nefna pöntunarnúmer og færslunúmer sem dæmi um degenerate dimension."
+  },
+  {
+    id: "hx-23",
+    section: "hx",
+    sectionLabel: "Högun (Architecture) – Kimball, Inmon og víddir (Dimensions)",
+    type: "mcq",
+    prompt: "Hvaða mæligildi (Measure) er líklegast ósummanlegt (Non-Additive Measure)?",
+    options: [
+      "Einkvæmur fjöldi seldra vara",
+      "Heildarupphæð seldra vara",
+      "Fjöldi seldra eininga",
+      "Eknir kílómetrar í ferð"
+    ],
+    answer: "Einkvæmur fjöldi seldra vara",
+    explanation: "Glærurnar nota þetta sem dæmi um non-additive measure."
+  },
+  {
+    id: "hx-24",
+    section: "hx",
+    sectionLabel: "Högun (Architecture) – Kimball, Inmon og víddir (Dimensions)",
+    type: "binary",
+    prompt: "Rétt eða rangt: Stofngögn (Masterdata) eru gögn sem lýsa samhengi, breytast sjaldan og margar víddir (Dimensions) falla undir þann flokk.",
+    options: ["Rétt", "Rangt"],
+    answer: "Rétt",
+    explanation: "Glærurnar skilgreina masterdata nákvæmlega með þessum hætti."
+  },
+
+  // Kafli 8 – Bestun (Optimization) og hermun (Simulation)
+  {
+    id: "k8-19",
+    section: "k8",
+    sectionLabel: "Kafli 8 – Bestun (Optimization) og hermun (Simulation)",
+    type: "mcq",
+    prompt: "Hvaða notkunartilvik (Use Case) er nefnt í glærunum fyrir línulega bestun (Linear Optimization)?",
+    options: [
+      "Skipulag mannaforða, vaktir og mönnun samkvæmt kjarasamningi",
+      "Nafngreining (Named Entity Recognition, NER) í texta",
+      "Viðhorfsgreining (Sentiment Analysis) á umsögnum",
+      "Role-playing dimension í dagsetningarvídd"
+    ],
+    answer: "Skipulag mannaforða, vaktir og mönnun samkvæmt kjarasamningi",
+    explanation: "Þetta er eitt af skýru dæmunum í glærunum um mathematical programming optimization."
+  },
+  {
+    id: "k8-20",
+    section: "k8",
+    sectionLabel: "Kafli 8 – Bestun (Optimization) og hermun (Simulation)",
+    type: "mcq",
+    prompt: "Hvaða lýsing á líffræðilegu hermireikniriti (Genetic Algorithm) er réttust?",
+    options: [
+      "Mengi lausna er metið, bestu lausnir valdar, paraðar saman og ferlið endurtekið",
+      "Allar mögulegar lausnir eru reiknaðar nákvæmlega og allar prófaðar",
+      "Aðferðin byggir á að breyta einu inntaksgildi og skoða staðbundin áhrif",
+      "Aðferðin er aðeins notuð í textaflokkun"
+    ],
+    answer: "Mengi lausna er metið, bestu lausnir valdar, paraðar saman og ferlið endurtekið",
+    explanation: "Þetta er bein lýsing á genetic algorithms úr glærunum."
+  },
+  {
+    id: "k8-21",
+    section: "k8",
+    sectionLabel: "Kafli 8 – Bestun (Optimization) og hermun (Simulation)",
+    type: "binary",
+    prompt: "Rétt eða rangt: Markleit (Goal-Seek) og hvað-ef greining (What-If Analysis) eru í glærunum sett fram sem óskyld hugtök sem vinna hvorugt með breytingum á inntaksbreytum.",
+    options: ["Rétt", "Rangt"],
+    answer: "Rangt",
+    explanation: "Báðar nálganir tengjast breytingum á inntaksbreytum, þó með ólík markmið."
+  }
+];
+
+questionBank.push(...megaQuestions);
+
+
+const countOptions = [10, 15, 20, 30, 40, 50, 60, 80, 100, 120, "all"];
 
 function shuffleArray(items) {
   const arr = [...items];
