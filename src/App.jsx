@@ -1979,9 +1979,390 @@ const moreExtraQuestions = [
 ];
 
 questionBank.push(...moreExtraQuestions);
+const evenMoreQuestions = [
+  // Kafli 1 – Viðskiptagreind (Business Intelligence, BI)
+  {
+    id: "k1-16",
+    section: "k1",
+    sectionLabel: "Kafli 1 – Viðskiptagreind (Business Intelligence, BI)",
+    type: "mcq",
+    prompt: "Hvaða atriði styður best hlutlausa ákvörðunartöku (Objective Decision-Making) samkvæmt glærunum?",
+    options: [
+      "Vel unnir kjarnamælikvarðar, myndræn framsetning og ný gögn",
+      "Óstaðlaðar skilgreiningar, gömul gögn og sterk reynslubundin tilfinning",
+      "Að sleppa samræmdum mælikvörðum svo hvert svið túlki gögnin sjálft",
+      "Að hafa sem flestar skýrslur en sem minnst samhengi"
+    ],
+    answer: "Vel unnir kjarnamælikvarðar, myndræn framsetning og ný gögn",
+    explanation: "Þetta er sú samsetning sem glærurnar tengja helst við hlutlausari ákvörðunartöku."
+  },
+  {
+    id: "k1-17",
+    section: "k1",
+    sectionLabel: "Kafli 1 – Viðskiptagreind (Business Intelligence, BI)",
+    type: "mcq",
+    prompt: "Hvaða lýsing á upplýsingum (Information) er réttust fremur en á gögnum (Data) eða þekkingu (Knowledge)?",
+    options: [
+      "Unnin, flokkuð, merkt og vensluð gögn sem veita innsýn",
+      "Hrá, samhengislaus og erfið gögn sem erfitt er að nota beint",
+      "Reynslubundið samhengi sem styður ákvörðunartöku",
+      "Óunnar textaskrár án nokkurrar framsetningar"
+    ],
+    answer: "Unnin, flokkuð, merkt og vensluð gögn sem veita innsýn",
+    explanation: "Glærurnar skilgreina upplýsingar sem unnin og læsileg gögn sem veita innsýn."
+  },
+  {
+    id: "k1-18",
+    section: "k1",
+    sectionLabel: "Kafli 1 – Viðskiptagreind (Business Intelligence, BI)",
+    type: "binary",
+    prompt: "Rétt eða rangt: Hópþrýstingur (Group Pressure) og bjartsýni (Optimism) geta skekkt ákvörðunartöku þótt gögn séu til staðar.",
+    options: ["Rétt", "Rangt"],
+    answer: "Rétt",
+    explanation: "Í glærunum eru þetta dæmi um þætti sem geta dregið úr hlutleysi ákvörðunartöku."
+  },
+
+  // Kafli 2 – Gervigreind (Artificial Intelligence, AI)
+  {
+    id: "k2-16",
+    section: "k2",
+    sectionLabel: "Kafli 2 – Gervigreind (Artificial Intelligence, AI)",
+    type: "mcq",
+    prompt: "Hvaða hugtak er regnhlífarhugtak (Umbrella Term) yfir aðferðir eins og vélrænt nám (Machine Learning, ML), djúpnám (Deep Learning, DL) og máltækni (Natural Language Processing, NLP)?",
+    options: [
+      "Gervigreind (Artificial Intelligence, AI)",
+      "Viðskiptagreining (Business Analytics, BA)",
+      "Vöruhús gagna (Data Warehouse, DWH)",
+      "Textanám (Text Mining)"
+    ],
+    answer: "Gervigreind (Artificial Intelligence, AI)",
+    explanation: "AI er sett fram sem regnhlífarhugtak yfir margar skyldar aðferðir."
+  },
+  {
+    id: "k2-17",
+    section: "k2",
+    sectionLabel: "Kafli 2 – Gervigreind (Artificial Intelligence, AI)",
+    type: "mcq",
+    prompt: "Hvaða lýsing passar best við máltækni (Natural Language Processing, NLP)?",
+    options: [
+      "Að vinna með talað eða skrifað mannamál í samskiptum við tölvur",
+      "Að hámarka markfall (Objective Function) með skorðum (Constraints)",
+      "Að geyma sögu í Type 2 víddum (Dimensions)",
+      "Að greina aðeins myndir með samvöfunartauganetum (CNN)"
+    ],
+    answer: "Að vinna með talað eða skrifað mannamál í samskiptum við tölvur",
+    explanation: "NLP snýst um samskipti við tölvur á mannamáli, bæði skrifuðu og töluðu."
+  },
+  {
+    id: "k2-18",
+    section: "k2",
+    sectionLabel: "Kafli 2 – Gervigreind (Artificial Intelligence, AI)",
+    type: "binary",
+    prompt: "Rétt eða rangt: Spunagreind (Generative AI) er í glærunum tengd því að búa til nýtt efni fremur en aðeins að greina fyrirliggjandi gögn.",
+    options: ["Rétt", "Rangt"],
+    answer: "Rétt",
+    explanation: "Glærurnar aðgreina spunagreind með því að hún útbúi nýtt efni."
+  },
+
+  // Kafli 3 – Gögn og gagnavinnsla (Data and Data Processing)
+  {
+    id: "k3-16",
+    section: "k3",
+    sectionLabel: "Kafli 3 – Gögn og gagnavinnsla (Data and Data Processing)",
+    type: "mcq",
+    prompt: "Hvaða gagnategund (Data Type) er líklegust ef skema (Schema) getur verið breytilegt á milli færslna?",
+    options: [
+      "Hálf-skipulögð gögn (Semi-Structured Data)",
+      "Skipulögð gögn (Structured Data)",
+      "Raðgögn (Ordinal Data)",
+      "Hlutfallsgögn (Ratio Data)"
+    ],
+    answer: "Hálf-skipulögð gögn (Semi-Structured Data)",
+    explanation: "Semi-structured gögn hafa gjarnan breytilegt skema, eins og JSON eða XML."
+  },
+  {
+    id: "k3-17",
+    section: "k3",
+    sectionLabel: "Kafli 3 – Gögn og gagnavinnsla (Data and Data Processing)",
+    type: "mcq",
+    prompt: "Hvaða hugtak lýsir því best að gögn séu ný og uppfærð þegar þau eru notuð?",
+    options: [
+      "Tímanleiki (Timeliness)",
+      "Auðgun (Richness)",
+      "Áreiðanleiki (Reliability)",
+      "Óeiginleg vídd (Degenerate Dimension)"
+    ],
+    answer: "Tímanleiki (Timeliness)",
+    explanation: "Timeliness snýst um að gögn séu nýleg og uppfærð á réttu augnabliki."
+  },
+  {
+    id: "k3-18",
+    section: "k3",
+    sectionLabel: "Kafli 3 – Gögn og gagnavinnsla (Data and Data Processing)",
+    type: "binary",
+    prompt: "Rétt eða rangt: Straumgreining (Stream Analytics) gerir yfirleitt ráð fyrir að allir atburðir komi í fullkominni tímaröð án seinkunar.",
+    options: ["Rétt", "Rangt"],
+    answer: "Rangt",
+    explanation: "Í straumgreiningu geta atburðir komið seint, í öfugri röð eða tvítekið."
+  },
+
+  // Kafli 4 – Vöruhús gagna (Data Warehouse, DWH)
+  {
+    id: "k4-16",
+    section: "k4",
+    sectionLabel: "Kafli 4 – Vöruhús gagna (Data Warehouse, DWH)",
+    type: "mcq",
+    prompt: "Hvaða samsetning lýsir best vöruhúsi gagna (Data Warehouse, DWH)?",
+    options: [
+      "Efnisflokkað (Subject-Oriented), samþætt (Integrated), tímaraðir (Time Series) og óhverft (Non-Volatile)",
+      "Óskipulagt (Unstructured), breytilegt (Volatile), ótímabundið og deildarsértækt",
+      "Aðeins hrá gögn (Raw Data), án hreinsunar og samþættingar",
+      "Sjálfvirkt (Autonomous), skýranlegt og eingöngu rauntímadrifið"
+    ],
+    answer: "Efnisflokkað (Subject-Oriented), samþætt (Integrated), tímaraðir (Time Series) og óhverft (Non-Volatile)",
+    explanation: "Þetta eru helstu eiginleikar vöruhúss gagna í glærunum."
+  },
+  {
+    id: "k4-17",
+    section: "k4",
+    sectionLabel: "Kafli 4 – Vöruhús gagna (Data Warehouse, DWH)",
+    type: "mcq",
+    prompt: "Hvaða geymsla (Storage) er líklegust ef gögn eru geymd hrá (Raw) og ekki er enn ljóst hvort þau fari í EDW/DWH?",
+    options: [
+      "Gagnalón (Data Lake)",
+      "Rekstrargagnageymsla (Operational Data Store, ODS)",
+      "Mælitafla (Fact Table)",
+      "Ákvörðunartökutré (Decision Tree)"
+    ],
+    answer: "Gagnalón (Data Lake)",
+    explanation: "Data Lake geymir hrá og fjölbreytt gögn þegar framtíðarnýting er ekki að fullu ljós."
+  },
+  {
+    id: "k4-18",
+    section: "k4",
+    sectionLabel: "Kafli 4 – Vöruhús gagna (Data Warehouse, DWH)",
+    type: "binary",
+    prompt: "Rétt eða rangt: Í ETL-flæði (Extract, Transform, Load) er útreikningur á stærðum eins og summum og prósentum líklegast í Calc-skrefinu (Calculation Step).",
+    options: ["Rétt", "Rangt"],
+    answer: "Rétt",
+    explanation: "Calc-skrefið er notað fyrir útreiknaðar stærðir eins og summur og prósentur."
+  },
+
+  // Kafli 5 – Gagnanám (Data Mining)
+  {
+    id: "k5-16",
+    section: "k5",
+    sectionLabel: "Kafli 5 – Gagnanám (Data Mining)",
+    type: "mcq",
+    prompt: "Hvaða líkan (Model) er líklegast ef markmiðið er að svara spurningum og gefa líkur út frá upplýsingagildi (Information Gain)?",
+    options: [
+      "Ákvörðunartökutré (Decision Tree)",
+      "Tauganet (Artificial Neural Network, ANN)",
+      "Hópun (Clustering)",
+      "Sambandsgreining (Association Analysis)"
+    ],
+    answer: "Ákvörðunartökutré (Decision Tree)",
+    explanation: "Decision tree velur breytu út frá information gain samkvæmt glærunum."
+  },
+  {
+    id: "k5-17",
+    section: "k5",
+    sectionLabel: "Kafli 5 – Gagnanám (Data Mining)",
+    type: "mcq",
+    prompt: "Hvaða aðferð (Method) hentar best til að finna óeðlileg tilvik (Anomalies) eða hópa í gögnum?",
+    options: [
+      "Hópun (Clustering)",
+      "Tvíkosta aðhvarfsgreining (Logistic Regression)",
+      "Nafngreining (Named Entity Recognition, NER)",
+      "What-if greining (What-If Analysis)"
+    ],
+    answer: "Hópun (Clustering)",
+    explanation: "Clustering er notað bæði til að finna hópa og möguleg frávik í gögnum."
+  },
+  {
+    id: "k5-18",
+    section: "k5",
+    sectionLabel: "Kafli 5 – Gagnanám (Data Mining)",
+    type: "binary",
+    prompt: "Rétt eða rangt: Sameining líkana (Ensemble) er í glærunum tengd meiri áreiðanleika (Reliability) og nákvæmni (Accuracy).",
+    options: ["Rétt", "Rangt"],
+    answer: "Rétt",
+    explanation: "Ensemble nálgun er sögð geta aukið bæði áreiðanleika og nákvæmni."
+  },
+
+  // Kafli 6 – Textanám (Text Mining) og óskipulögð gögn (Unstructured Data)
+  {
+    id: "k6-16",
+    section: "k6",
+    sectionLabel: "Kafli 6 – Textanám (Text Mining) og óskipulögð gögn (Unstructured Data)",
+    type: "mcq",
+    prompt: "Hvaða aðferð (Method) flokkar skjöl í fyrirfram skilgreinda efnisflokka?",
+    options: [
+      "Efnisflokkun (Categorization)",
+      "Hópun (Clustering)",
+      "Hugtakavensl (Concept Linking)",
+      "Svaraleit (Question Answering)"
+    ],
+    answer: "Efnisflokkun (Categorization)",
+    explanation: "Categorization vinnur með fyrirfram skilgreinda flokka."
+  },
+  {
+    id: "k6-17",
+    section: "k6",
+    sectionLabel: "Kafli 6 – Textanám (Text Mining) og óskipulögð gögn (Unstructured Data)",
+    type: "mcq",
+    prompt: "Hvaða aðferð (Method) hjálpar notendum að finna skjöl sem fjalla um tengd mál sem þeir hefðu annars líklega ekki fundið?",
+    options: [
+      "Hugtakavensl (Concept Linking)",
+      "Samantekt (Summarization)",
+      "Efnisvöktun (Topic Tracking)",
+      "Viðhorfsgreining (Sentiment Analysis)"
+    ],
+    answer: "Hugtakavensl (Concept Linking)",
+    explanation: "Concept Linking tengir skyld viðfangsefni og leiðir notendur áfram í tengt efni."
+  },
+  {
+    id: "k6-18",
+    section: "k6",
+    sectionLabel: "Kafli 6 – Textanám (Text Mining) og óskipulögð gögn (Unstructured Data)",
+    type: "binary",
+    prompt: "Rétt eða rangt: Rödd starfsmannsins (Voice of the Employee, VOE) og rödd viðskiptavinarins (Voice of the Customer, VOC) eru sama hugtakið í glærunum.",
+    options: ["Rétt", "Rangt"],
+    answer: "Rangt",
+    explanation: "VOE og VOC eru aðskilin hugtök með mismunandi áherslur."
+  },
+
+  // Kafli 7 – Djúpnám (Deep Learning, DL) og vitsmunavélar (Cognitive Computing)
+  {
+    id: "k7-16",
+    section: "k7",
+    sectionLabel: "Kafli 7 – Djúpnám (Deep Learning, DL) og vitsmunavélar (Cognitive Computing)",
+    type: "mcq",
+    prompt: "Hvaða lýsing á tauganeti (Artificial Neural Network, ANN) er réttust?",
+    options: [
+      "Reiknilíkan sem hermir eftir virkni taugakerfis og lærir mynstur í gögnum",
+      "Fast reglukerfi sem breytist ekki eftir innleiðingu",
+      "Aðferð til að hanna gagnamarkaði (Data Marts)",
+      "Skjalaflokkun sem byggir aðeins á fyrirfram skilgreindum efnisorðum"
+    ],
+    answer: "Reiknilíkan sem hermir eftir virkni taugakerfis og lærir mynstur í gögnum",
+    explanation: "Þetta er kjarnalýsing ANN í kennsluefninu."
+  },
+  {
+    id: "k7-17",
+    section: "k7",
+    sectionLabel: "Kafli 7 – Djúpnám (Deep Learning, DL) og vitsmunavélar (Cognitive Computing)",
+    type: "mcq",
+    prompt: "Hvaða aðferð (Method) byggir á leikjafræði (Game Theory) og gefur hverju inntaksgildi vægi?",
+    options: [
+      "SHAP",
+      "LIME",
+      "NER",
+      "CNN"
+    ],
+    answer: "SHAP",
+    explanation: "SHAP er í glærunum sérstaklega tengt leikjafræði og vægi inntaksbreyta."
+  },
+  {
+    id: "k7-18",
+    section: "k7",
+    sectionLabel: "Kafli 7 – Djúpnám (Deep Learning, DL) og vitsmunavélar (Cognitive Computing)",
+    type: "binary",
+    prompt: "Rétt eða rangt: Samvöfunartauganet (Convolutional Neural Networks, CNN) eru í glærunum frekar tengd myndgreiningu (Image Recognition) en endurkvæm tauganet (Recurrent Neural Networks, RNN).",
+    options: ["Rétt", "Rangt"],
+    answer: "Rétt",
+    explanation: "CNN eru fyrst og fremst tengd myndgreiningu, en RNN/LSTM frekar röðum eins og texta og tali."
+  },
+
+  // Kafli 8 – Forskriftargreiningar (Prescriptive Analytics), bestun (Optimization) og hermun (Simulation)
+  {
+    id: "k8-16",
+    section: "k8",
+    sectionLabel: "Kafli 8 – Forskriftargreiningar (Prescriptive Analytics), bestun (Optimization) og hermun (Simulation)",
+    type: "mcq",
+    prompt: "Hvaða atriði er líklegast dæmi um skorðu (Constraint) í bestunarlíkani (Optimization Model)?",
+    options: [
+      "Takmarkaður fjöldi starfsmanna, hráefnis eða fjármagns",
+      "Hámarka hagnað (Profit) eða lágmarka kostnað (Cost)",
+      "Fjöldi eininga af vöru sem á að framleiða",
+      "Skýringaraðferð eins og SHAP eða LIME"
+    ],
+    answer: "Takmarkaður fjöldi starfsmanna, hráefnis eða fjármagns",
+    explanation: "Skorður eru takmarkanir á aðföngum eða öðrum skilyrðum í líkaninu."
+  },
+  {
+    id: "k8-17",
+    section: "k8",
+    sectionLabel: "Kafli 8 – Forskriftargreiningar (Prescriptive Analytics), bestun (Optimization) og hermun (Simulation)",
+    type: "mcq",
+    prompt: "Hvaða aðferð (Method) leitar að inntaki sem skilar ákveðnu úttaki, eins og tilteknu markmiði í vexti eða afkomu?",
+    options: [
+      "Markleit (Goal-Seek)",
+      "Hópun (Clustering)",
+      "Viðhorfsgreining (Sentiment Analysis)",
+      "Samantekt (Summarization)"
+    ],
+    answer: "Markleit (Goal-Seek)",
+    explanation: "Goal-seek snýst um að finna inntak sem leiðir til tiltekins úttaks."
+  },
+  {
+    id: "k8-18",
+    section: "k8",
+    sectionLabel: "Kafli 8 – Forskriftargreiningar (Prescriptive Analytics), bestun (Optimization) og hermun (Simulation)",
+    type: "binary",
+    prompt: "Rétt eða rangt: Hermun (Simulation) tryggir sjálfkrafa bestu mögulegu lausn ef nóg er af sviðsmyndum (Scenarios).",
+    options: ["Rétt", "Rangt"],
+    answer: "Rangt",
+    explanation: "Hermun prófar sviðsmyndir en finnur ekki sjálfkrafa bestu lausn."
+  },
+
+  // Högun (Architecture) og aðferðafræði (Methodology)
+  {
+    id: "hx-16",
+    section: "hx",
+    sectionLabel: "Högun (Architecture) – Aðferðafræði (Methodology), víddir (Dimensions) og mæligildi (Measures)",
+    type: "mcq",
+    prompt: "Hvaða lýsing á Kimball-aðferðafræði (Kimball Methodology) er réttust?",
+    options: [
+      "Bottom-up nálgun sem byrjar á gagnamörkuðum (Data Marts) og vex með tíma",
+      "Top-down nálgun sem byrjar á miðlægu 3NF vöruhúsi (Enterprise Data Warehouse)",
+      "Aðferð sem geymir aðeins hrá gögn á diski í gagnalóni (Data Lake)",
+      "Aðferð sem sleppir víddum (Dimensions) og vinnur aðeins með mæligildi (Measures)"
+    ],
+    answer: "Bottom-up nálgun sem byrjar á gagnamörkuðum (Data Marts) og vex með tíma",
+    explanation: "Kimball er í glærunum sett fram sem bottom-up nálgun."
+  },
+  {
+    id: "hx-17",
+    section: "hx",
+    sectionLabel: "Högun (Architecture) – Aðferðafræði (Methodology), víddir (Dimensions) og mæligildi (Measures)",
+    type: "mcq",
+    prompt: "Hvaða mæligildi (Measure) er líklegast hálf-summanlegt (Semi-Additive Measure)?",
+    options: [
+      "Staða reiknings í lok mánaðar",
+      "Heildarupphæð seldra vara í stakri færslu",
+      "Fjöldi seldra eininga í söluviðburði",
+      "Fjöldi ekinna kílómetra í einni ferð"
+    ],
+    answer: "Staða reiknings í lok mánaðar",
+    explanation: "Lokastaða reiknings er klassískt dæmi um semi-additive measure."
+  },
+  {
+    id: "hx-18",
+    section: "hx",
+    sectionLabel: "Högun (Architecture) – Aðferðafræði (Methodology), víddir (Dimensions) og mæligildi (Measures)",
+    type: "binary",
+    prompt: "Rétt eða rangt: Hlutverkavídd (Role-Playing Dimension) felur í sér að sama vídd (Dimension) sé notuð í mismunandi hlutverkum, eins og pöntunardagsetning (Order Date) og sendingardagsetning (Ship Date).",
+    options: ["Rétt", "Rangt"],
+    answer: "Rétt",
+    explanation: "Role-playing dimension er nákvæmlega þetta mynstur í víddarlíkönum."
+  }
+];
+
+questionBank.push(...evenMoreQuestions);
 
 
-const countOptions = [10, 15, 20, 30, 40, 50, 60, 80, "all"];
+const countOptions = [10, 15, 20, 30, 40, 50, 60, 80, 100, "all"];
 
 function shuffleArray(items) {
   const arr = [...items];
