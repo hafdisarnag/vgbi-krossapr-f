@@ -2756,6 +2756,7 @@ const megaQuestions = [
 
 questionBank.push(...megaQuestions);
 
+
 const fullChapterQuestions = [
   // Kafli 1 – Viðskiptagreind (Business Intelligence, BI)
   {
@@ -3137,6 +3138,189 @@ const fullChapterQuestions = [
 ];
 
 questionBank.push(...fullChapterQuestions);
+
+const chapter1ReviewQuestions = [
+  {
+    id: "k1-review-1",
+    section: "k1",
+    sectionLabel: "Kafli 1 – Viðskiptagreind",
+    type: "mcq",
+    prompt: "Hvaða fullyrðing er réttust um tengd hugtök í kafla 1?",
+    options: [
+      "Kennarinn gerir alltaf mjög skýran og harðan greinarmun á BI, Data Analytics og Business Analytics",
+      "Hugtökin eru alveg föst og eins skilin af öllum",
+      "Skilningur á hugtökunum getur verið breytilegur eftir því við hvern er talað",
+      "Viðskiptagreining merkir eingöngu hagræðingu en aldrei spá"
+    ],
+    answer: "Skilningur á hugtökunum getur verið breytilegur eftir því við hvern er talað",
+    explanation: "Í glærunum er bent á að þessi hugtök eru ekki alltaf notuð nákvæmlega eins alls staðar. Það fer oft eftir samhengi, kennara, fyrirtæki eða fræðigrein."
+  },
+  {
+    id: "k1-review-2",
+    section: "k1",
+    sectionLabel: "Kafli 1 – Viðskiptagreind",
+    type: "mcq",
+    prompt: "Fyrirtæki vill sameina gögn úr mörgum kerfum í umhverfi sem hentar vel fyrir greiningu og skýrslugerð, án þess að yfirhlaða rekstrarkerfin. Hvaða hugtak lýsir þessu best?",
+    options: [
+      "Rekstrargagnagrunnur, OLTP",
+      "Vöruhús gagna, Data Warehouse",
+      "Gagnavísindi, Data Science",
+      "Sjálfstæð ákvörðunartaka, Autonomous decision-making"
+    ],
+    answer: "Vöruhús gagna, Data Warehouse",
+    explanation: "Vöruhús gagna er sérstaklega ætlað fyrir greiningu, samþættingu gagna og skýrslugerð."
+  },
+  {
+    id: "k1-review-3",
+    section: "k1",
+    sectionLabel: "Kafli 1 – Viðskiptagreind",
+    type: "mcq",
+    prompt: "Fyrirtæki notar vel skilgreindar reglur til að samþykkja einfaldar greiðslur og kerfið lærir ekki af niðurstöðum. Hvaða hugtak á best við?",
+    options: [
+      "Sjálfvirk ákvörðunartaka, Automatic",
+      "Sjálfstæð ákvörðunartaka, Autonomous",
+      "Spádómsgreining, Predictive Analytics",
+      "Forskriftargreining, Prescriptive Analytics"
+    ],
+    answer: "Sjálfvirk ákvörðunartaka, Automatic",
+    explanation: "Þetta er reglubundið og fyrirfram skilgreint ferli, ekki sjálfstætt kerfi sem lærir og aðlagast."
+  },
+  {
+    id: "k1-review-4",
+    section: "k1",
+    sectionLabel: "Kafli 1 – Viðskiptagreind",
+    type: "mcq",
+    prompt: "Greinandi fær hráar færslur úr mörgum kerfum. Eftir að þær eru flokkaðar, merktar og settar í samhengi verða þær auðlæsilegri og nýtilegri. Hvaða hugtak lýsir nýju stöðunni best?",
+    options: [
+      "Gögn, Data",
+      "Þekking, Knowledge",
+      "Upplýsingar, Information",
+      "Hæfnisetur viðskiptagreindar, BI Competency Center"
+    ],
+    answer: "Upplýsingar, Information",
+    explanation: "Gögn eru hráar færslur. Upplýsingar eru gögn sem búið er að vinna úr og setja í samhengi. Þekking er dýpri skilningur eða túlkun byggð á upplýsingum og reynslu."
+  },
+  {
+    id: "k1-review-5",
+    section: "k1",
+    sectionLabel: "Kafli 1 – Viðskiptagreind",
+    type: "mcq",
+    prompt: "Fyrirtæki vill skilja hvað gerðist í síðasta mánuði, hvaða vöruflokkar seldu mest og hvernig árangur var eftir svæðum. Hvaða tegund greiningar er líklegust?",
+    options: [
+      "Lýsandi greining, Descriptive Analytics",
+      "Spádómsgreining, Predictive Analytics",
+      "Forskriftargreining, Prescriptive Analytics",
+      "Sjálfstæð ákvörðunartaka, Autonomous"
+    ],
+    answer: "Lýsandi greining, Descriptive Analytics",
+    explanation: "Spurningin snýst um hvað gerðist, sem er kjarni lýsandi greiningar."
+  },
+  {
+    id: "k1-review-6",
+    section: "k1",
+    sectionLabel: "Kafli 1 – Viðskiptagreind",
+    type: "mcq",
+    prompt: "Tryggingafélag vill áætla hvaða nýir viðskiptavinir séu líklegastir til að lenda í háum kostnaði síðar. Hvaða aðferð er líklegust?",
+    options: [
+      "Lýsandi greining",
+      "Spádómsgreining",
+      "ETL",
+      "OLTP vinnsla"
+    ],
+    answer: "Spádómsgreining",
+    explanation: "Hér er verið að spá fyrir um framtíðarhegðun eða framtíðaráhættu."
+  },
+  {
+    id: "k1-review-7",
+    section: "k1",
+    sectionLabel: "Kafli 1 – Viðskiptagreind",
+    type: "mcq",
+    prompt: "Fyrirtæki vill ekki bara sjá líklega sölu heldur líka fá tillögu að besta verði til að ná tilteknu markmiði. Hvaða greining nálgast það best?",
+    options: [
+      "Lýsandi greining",
+      "Spádómsgreining",
+      "Forskriftargreining",
+      "Gagnahreinsun"
+    ],
+    answer: "Forskriftargreining",
+    explanation: "Forskriftargreining segir ekki bara hvað muni líklega gerast heldur líka hvaða aðgerð sé best."
+  },
+  {
+    id: "k1-review-8",
+    section: "k1",
+    sectionLabel: "Kafli 1 – Viðskiptagreind",
+    type: "mcq",
+    prompt: "Framkvæmdastjóri segir: Mig langar að ráðast í mjög spennandi BI verkefni af því nýja tæknin lítur vel út. Hvað er líklegasta gagnrýnin út frá glærunum?",
+    options: [
+      "Það er í lagi ef tæknin er ný",
+      "BI á fyrst og fremst að styðja stefnu fyrirtækisins, ekki vera gæluverkefni",
+      "Tækniverkefni þurfa ekki stuðning notenda",
+      "BI á aðeins við í stórum fyrirtækjum"
+    ],
+    answer: "BI á fyrst og fremst að styðja stefnu fyrirtækisins, ekki vera gæluverkefni",
+    explanation: "Glærurnar leggja áherslu á að BI eigi að styðja við raunveruleg markmið og stefnu, ekki bara vera spennandi tækni."
+  },
+  {
+    id: "k1-review-9",
+    section: "k1",
+    sectionLabel: "Kafli 1 – Viðskiptagreind",
+    type: "mcq",
+    prompt: "Fyrirtæki vill svara spurningunni Hvað hefur selst mikið síðustu 10 mínútur og einnig fylgjast með frávikum um leið og þau verða til. Hvað er líklegast að sé sérstaklega mikilvægt hér?",
+    options: [
+      "Að treysta aðeins á ársskýrslur",
+      "Rauntímagreiningar",
+      "Að nota eingöngu rekstrargagnagrunn án annarra verkfæra",
+      "Að sleppa mælaborðum"
+    ],
+    answer: "Rauntímagreiningar",
+    explanation: "Tíminn skiptir öllu hér. Þetta snýst um mjög nýleg gögn og skjót viðbrögð."
+  },
+  {
+    id: "k1-review-10",
+    section: "k1",
+    sectionLabel: "Kafli 1 – Viðskiptagreind",
+    type: "mcq",
+    prompt: "Hópur skoðar sömu sölutölur. Einn sér hrá gögn, annar sér samantekt með merkingu, og þriðji leggur til aðgerðir byggðar á reynslu og samhengi. Hver er röðin rétt frá einfaldasta stigi yfir í hæsta stigi?",
+    options: [
+      "Þekking -> Upplýsingar -> Gögn",
+      "Gögn -> Upplýsingar -> Þekking",
+      "Upplýsingar -> Gögn -> Þekking",
+      "Gögn -> Þekking -> Upplýsingar"
+    ],
+    answer: "Gögn -> Upplýsingar -> Þekking",
+    explanation: "Þetta er klassíska röðin frá hráu efni yfir í merkingu og síðan dýpri skilning."
+  },
+  {
+    id: "k1-review-11",
+    section: "k1",
+    sectionLabel: "Kafli 1 – Viðskiptagreind",
+    type: "mcq",
+    prompt: "Þið eruð að hanna BI lausn fyrir fyrirtæki og stjórnendur vilja mælikvarða sem allir skilja eins. Hvað er líklegasta fyrsta áherslan?",
+    options: [
+      "Sem flest ólík KPI fyrir mismunandi deildir",
+      "Staðlaðir og auðskiljanlegir kjarnamælikvarðar",
+      "Að hver deild skilgreini sín eigin hugtök óháð öðrum",
+      "Að fela niðurstöður fyrir notendum þar til líkanið er fullkomið"
+    ],
+    answer: "Staðlaðir og auðskiljanlegir kjarnamælikvarðar",
+    explanation: "Sameiginlegur skilningur á mælikvörðum er grunnur að góðri BI lausn."
+  },
+  {
+    id: "k1-review-12",
+    section: "k1",
+    sectionLabel: "Kafli 1 – Viðskiptagreind",
+    type: "mcq",
+    prompt: "Ef notendur og stjórnendur skilja ekki verkefnið á sama hátt, hvaða vandamál er líklegast að komi upp?",
+    options: [
+      "Innleiðingin verður sjálfkrafa hraðari",
+      "Gögnin verða sjálfkrafa hlutlausari",
+      "Væntingar, forgangsröðun og notkun niðurstaðna verða óskýr",
+      "OLTP kerfin verða stöðugri"
+    ],
+    answer: "Væntingar, forgangsröðun og notkun niðurstaðna verða óskýr",
+    explanation: "Þegar fólk er ekki að horfa á verkefnið með sama skilningi verður auðvelt að lenda í misskilningi og röngum væntingum."
+  }
+];
 
 const countOptions = [10, 15, 20, 30, 40, 50, 60, 80, 100, 120, 150, "all"];
 function shuffleArray(items) {
