@@ -1,7 +1,11 @@
 import React, { useMemo, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { BookOpen, Brain, Database, Warehouse, Search, Network, Cpu, Sigma, Trophy, RefreshCw, Filter, CheckCircle2, XCircle, Layers3 } from "lucide-react";
-import { Analytics } from "@vercel/analytics/next";
+import {
+  BookOpen, Brain, Database, Warehouse, Search, Network,
+  Cpu, Sigma, Trophy, RefreshCw, Filter, CheckCircle2,
+  XCircle, Layers3
+} from "lucide-react";
+import { Analytics } from "@vercel/analytics/react";
 
 const sections = [
   { id: "all", title: "Allt efnið", subtitle: "Blandað úr öllum glærunum", icon: Layers3 },
@@ -3947,7 +3951,9 @@ export default function VGBIQuizSite() {
     return grouped;
   }, [answers]);
 
+
   return (
+    <>
     <div className="min-h-screen bg-slate-950 text-slate-100">
       <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         <motion.div
@@ -4251,5 +4257,7 @@ export default function VGBIQuizSite() {
         )}
       </div>
     </div>
+    <Analytics />
+  </>
   );
 }
