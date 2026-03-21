@@ -3323,6 +3323,491 @@ const chapter1ReviewQuestions = [
 ];
 questionBank.push(...chapter1ReviewQuestions);
 
+const kafli2QuestionBankExtra = [
+  {
+    id: "k2-22",
+    section: "k2",
+    sectionLabel: "Kafli 2 – Gervigreind",
+    type: "mcq",
+    prompt: "Hvaða hugtak lýsir best lausn sem fylgist með umhverfi sínu, lærir og bregst við breytingum til að ná ákveðnu markmiði?",
+    options: [
+      "Máltækni (e. Natural Language Processing, NLP)",
+      "Snjallþjónusta (e. Intelligent Agent)",
+      "Vélþýðing (e. Machine Translation)",
+      "Spjallmenni (e. Chatbot)"
+    ],
+    answer: "Snjallþjónusta (e. Intelligent Agent)",
+    explanation: "Snjallþjónustur eru sjálfstæðar þjónustur sem fylgjast með, læra og bregðast við breytingum í umhverfi sínu til að ná markmiði."
+  },
+  {
+    id: "k2-23",
+    section: "k2",
+    sectionLabel: "Kafli 2 – Gervigreind",
+    type: "mcq",
+    prompt: "Hvaða fullyrðing lýsir best muninum á vélrænu námi (e. Machine Learning, ML) og djúpnámi (e. Deep Learning, DL)?",
+    options: [
+      "ML byggir alltaf á tauganetum en DL ekki",
+      "DL er hlutmengi af ML og er helst notað í flóknari notkunartilvikum",
+      "ML er eingöngu notað í texta en DL í myndum",
+      "DL þarf ekki gögn til að læra"
+    ],
+    answer: "DL er hlutmengi af ML og er helst notað í flóknari notkunartilvikum",
+    explanation: "Djúpnám er hlutmengi af vélrænu námi og er notað í flóknari notkunartilvikum eins og sjálfkeyrandi bílum og rauntímakerfum."
+  },
+  {
+    id: "k2-24",
+    section: "k2",
+    sectionLabel: "Kafli 2 – Gervigreind",
+    type: "mcq",
+    prompt: "Hvaða aðferð er líklegust að sé notuð þegar kerfi á að eiga samskipti við notanda á töluðu eða skrifuðu mannamáli?",
+    options: [
+      "Máltækni (e. NLP)",
+      "Sjálfvirk útvistun",
+      "Vélmennafræði (e. Robotics)",
+      "Rökgreind"
+    ],
+    answer: "Máltækni (e. NLP)",
+    explanation: "NLP snýst um samskipti við tölvur á mannamáli, hvort sem það er talað eða skrifað."
+  },
+  {
+    id: "k2-25",
+    section: "k2",
+    sectionLabel: "Kafli 2 – Gervigreind",
+    type: "mcq",
+    prompt: "Hvaða fullyrðing um spunagreind (e. Generative AI) passar best við glærurnar?",
+    options: [
+      "Hún er notuð til að greina gögn en býr ekki til nýtt efni",
+      "Hún er í raun bara annað orð yfir vélrænt nám",
+      "Hún getur búið til nýtt, áður óséð efni",
+      "Hún krefst alltaf handskrifaðra reglna"
+    ],
+    answer: "Hún getur búið til nýtt, áður óséð efni",
+    explanation: "Spunagreind útbýr nýtt, áður óséð efni, sem er það sem aðgreinir hana sérstaklega í glærunum."
+  },
+  {
+    id: "k2-26",
+    section: "k2",
+    sectionLabel: "Kafli 2 – Gervigreind",
+    type: "mcq",
+    prompt: "Fyrirtæki vill lausn sem leggur til bestu ákvörðunina, en starfsmaður þarf alltaf að fara yfir tillöguna áður en hún er framkvæmd. Hvaða 4x líkan Schrage passar best?",
+    options: [
+      "Sjálfvirki ráðgjafinn",
+      "Sjálfvirk útvistun",
+      "Samvinna manns og vélar",
+      "Algert sjálfstæði vélar"
+    ],
+    answer: "Samvinna manns og vélar",
+    explanation: "Í þessu líkani leggur lausnin til bestu lausnina en manneskja rýnir og samþykkir hana."
+  },
+  {
+    id: "k2-27",
+    section: "k2",
+    sectionLabel: "Kafli 2 – Gervigreind",
+    type: "mcq",
+    prompt: "Hvaða Schrage-líkan á best við þegar reglur eru kýrskýrar og hægt er að færa ferlið nánast alveg yfir í sjálfvirkt kerfi?",
+    options: [
+      "Sjálfvirki ráðgjafinn",
+      "Sjálfvirk útvistun",
+      "Samvinna manns og vélar",
+      "Greindarsamanburður"
+    ],
+    answer: "Sjálfvirk útvistun",
+    explanation: "Sjálfvirk útvistun á við þegar reglur eru mjög skýrar og hægt er að láta kerfið sjá um framkvæmdina."
+  },
+  {
+    id: "k2-28",
+    section: "k2",
+    sectionLabel: "Kafli 2 – Gervigreind",
+    type: "mcq",
+    prompt: "Hvað af eftirfarandi er best dæmi um snjallþjónustu (e. Intelligent Agent) samkvæmt glærunum?",
+    options: [
+      "Kerfi sem þýðir texta orð fyrir orð milli tungumála",
+      "Vírusvörn sem finnur líkleg vírusmynstur",
+      "PDF-lesari sem sýnir skjöl hraðar",
+      "Lyklaborð sem leiðréttir innsláttarvillur með orðabók"
+    ],
+    answer: "Vírusvörn sem finnur líkleg vírusmynstur",
+    explanation: "Vírusvörn er sérstaklega nefnd sem dæmi um snjallþjónustu sem finnur líkleg mynstur."
+  },
+  {
+    id: "k2-29",
+    section: "k2",
+    sectionLabel: "Kafli 2 – Gervigreind",
+    type: "mcq",
+    prompt: "Hvaða dæmi á glærunum sýnir best snjallþjónustu sem nýtir samtengdar upplýsingar til að vekja athygli á grunsamlegri hegðun?",
+    options: [
+      "Sjálfkeyrandi bílar í borgarumferð",
+      "Ólöglegt skógarhögg",
+      "Vélþýðing á heilbrigðisgögnum",
+      "Talgreining í símaappi"
+    ],
+    answer: "Ólöglegt skógarhögg",
+    explanation: "Í glærunum er nefnt dæmi þar sem snjallþjónusta samtengir upplýsingar og lætur vita ef grunur er á ólöglegu skógarhöggi."
+  },
+  {
+    id: "k2-30",
+    section: "k2",
+    sectionLabel: "Kafli 2 – Gervigreind",
+    type: "mcq",
+    prompt: "Hver er líklegasta ástæðan fyrir því að illa skilgreindir viðskiptaferlar geti gert innleiðingu gervigreindar erfiða?",
+    options: [
+      "Gervigreind getur aðeins unnið með myndgögn",
+      "Lausnir byggja oft á fyrirfram skilgreindum ferlum",
+      "Gervigreind þarf alltaf handvirka samþykkt",
+      "Viðskiptaferlar skipta litlu máli ef gögnin eru góð"
+    ],
+    answer: "Lausnir byggja oft á fyrirfram skilgreindum ferlum",
+    explanation: "Ef viðskiptaferlar eru illa skilgreindir og síbreytilegir verður innleiðing erfið samkvæmt glærunum."
+  },
+  {
+    id: "k2-31",
+    section: "k2",
+    sectionLabel: "Kafli 2 – Gervigreind",
+    type: "mcq",
+    prompt: "Hvaða atriði er nefnt sem hugsanleg takmörkun eða áhætta við innleiðingu gervigreindar?",
+    options: [
+      "Hún getur ekki svarað mörgum fyrirspurnum samtímis",
+      "Hún hentar aðeins einföldum útreikningum",
+      "Langtímasparnaður er ekki endilega til staðar",
+      "Hún getur ekki haft áhrif á ákvarðanatöku"
+    ],
+    answer: "Langtímasparnaður er ekki endilega til staðar",
+    explanation: "Í glærunum er nefnt að langtímasparnaður sé ekki endilega til staðar og að kostnaður og áhætta þurfi að meta."
+  },
+  {
+    id: "k2-32",
+    section: "k2",
+    sectionLabel: "Kafli 2 – Gervigreind",
+    type: "mcq",
+    prompt: "Hvaða svar passar best við „virði gervigreindar“ eins og það er sett fram í glærunum?",
+    options: [
+      "Hún kemur alfarið í stað mannlegrar dómgreindar",
+      "Hún býður upp á nýjar leiðir til að taka ákvarðanir hraðar en áður",
+      "Hún er fyrst og fremst gagnleg þegar gögn eru lítil",
+      "Hún skiptir mestu máli í afþreyingu en síður í rekstri"
+    ],
+    answer: "Hún býður upp á nýjar leiðir til að taka ákvarðanir hraðar en áður",
+    explanation: "Virðið er meðal annars að geta brugðist hraðar við atburðum og tekið ákvarðanir skjótvirkar."
+  },
+  {
+    id: "k2-33",
+    section: "k2",
+    sectionLabel: "Kafli 2 – Gervigreind",
+    type: "mcq",
+    prompt: "Hvaða fullyrðing er næst því sem glærurnar segja um vélrænt nám (e. ML)?",
+    options: [
+      "Það auðkennir mynstur, spáir fyrir um og aðlagast",
+      "Það býr alltaf til nýtt efni fyrir notandann",
+      "Það er sama hugtak og djúpnám",
+      "Það er fyrst og fremst aðferð til að þýða tungumál"
+    ],
+    answer: "Það auðkennir mynstur, spáir fyrir um og aðlagast",
+    explanation: "Þetta er nákvæm lýsingin á ML í glærunum."
+  },
+  {
+    id: "k2-34",
+    section: "k2",
+    sectionLabel: "Kafli 2 – Gervigreind",
+    type: "mcq",
+    prompt: "Hver eftirfarandi fullyrðinga um djúpnám (e. DL) er réttust miðað við glærurnar?",
+    options: [
+      "Það er einfaldari og minna gagnakræf útgáfa af ML",
+      "Það hermir eftir hegðun mannsheilans og styðst við tauganet",
+      "Það er eingöngu notað í reikningshaldi",
+      "Það þarf ekki stöðuga aðlögun að nýjum gögnum"
+    ],
+    answer: "Það hermir eftir hegðun mannsheilans og styðst við tauganet",
+    explanation: "Djúpnám byggir á tauganetum og hermir eftir hegðun mannsheilans."
+  },
+  {
+    id: "k2-35",
+    section: "k2",
+    sectionLabel: "Kafli 2 – Gervigreind",
+    type: "mcq",
+    prompt: "Hvaða notkunartilvik var sérstaklega nefnt sem dæmi um flóknara notkunartilvik djúpnáms?",
+    options: [
+      "Skattframtöl einstaklinga",
+      "Sjálfkeyrandi bílar",
+      "Póstflokkun með handrituðum reglum",
+      "Orðabókaforrit"
+    ],
+    answer: "Sjálfkeyrandi bílar",
+    explanation: "Sjálfkeyrandi bílar eru sérstaklega nefndir sem dæmi um flóknari notkun djúpnáms."
+  },
+  {
+    id: "k2-36",
+    section: "k2",
+    sectionLabel: "Kafli 2 – Gervigreind",
+    type: "mcq",
+    prompt: "Hvað af eftirfarandi er besta lýsingin á spjallmenni (e. Chatbot)?",
+    options: [
+      "Áþreifanlegt vélmenni sem flytur hluti í verksmiðju",
+      "Tölvuvædd þjónusta sem leyfir samræður milli manneskju og hugbúnaðar",
+      "Gagnagrunnskerfi sem svarar aðeins SQL fyrirspurnum",
+      "Vélþýðingarforrit sem vinnur án notendasamskipta"
+    ],
+    answer: "Tölvuvædd þjónusta sem leyfir samræður milli manneskju og hugbúnaðar",
+    explanation: "Spjallmenni eru tölvuvædd þjónusta sem leyfir samræður milli manneskju og hugbúnaðar á mannamáli."
+  },
+  {
+    id: "k2-37",
+    section: "k2",
+    sectionLabel: "Kafli 2 – Gervigreind",
+    type: "mcq",
+    prompt: "Hvaða fullyrðing um vélmenni / vélmennafræði (e. Robotics) samræmist glærunum best?",
+    options: [
+      "Vélmenni eru alltaf hugbúnaður og aldrei áþreifanlegir hlutir",
+      "Vélmenni skynja umhverfi sitt og geta haft áhrif á það",
+      "Vélmenni þurfa ekki gervigreind til að teljast vélmenni samkvæmt glærunum",
+      "Spjallmenni teljast ekki undir umræðu glæranna"
+    ],
+    answer: "Vélmenni skynja umhverfi sitt og geta haft áhrif á það",
+    explanation: "Í glærunum kemur fram að vélmenni skynji umhverfi sitt og geti haft áhrif á það."
+  },
+  {
+    id: "k2-38",
+    section: "k2",
+    sectionLabel: "Kafli 2 – Gervigreind",
+    type: "mcq",
+    prompt: "Hvað af eftirfarandi var nefnt sem raunhæf notkun gervigreindar í fjármálafyrirtækjum?",
+    options: [
+      "Að afnema allar lánareglur",
+      "Lánveitingar án aðkomu starfsmanna",
+      "Að banna netþjónustu",
+      "Að sleppa svindleftirliti"
+    ],
+    answer: "Lánveitingar án aðkomu starfsmanna",
+    explanation: "Lánveitingarferli eru nefnd sem dæmi um notkun gervigreindar í atvinnulífi."
+  },
+  {
+    id: "k2-39",
+    section: "k2",
+    sectionLabel: "Kafli 2 – Gervigreind",
+    type: "mcq",
+    prompt: "Hvaða svarmöguleiki lýsir best því sem glærurnar segja um ráðningarferli og gervigreind?",
+    options: [
+      "Gervigreind á að taka allar ráðningarákvarðanir ein",
+      "Gervigreind getur samræmt samskipti og flýtt fyrir ferli",
+      "Gervigreind útilokar alltaf hlutdrægni",
+      "Gervigreind á aðeins við um tæknistörf"
+    ],
+    answer: "Gervigreind getur samræmt samskipti og flýtt fyrir ferli",
+    explanation: "Ráðningaferli er nefnt sem notkunartilvik og AI getur flýtt og samræmt ákveðna hluta ferlisins."
+  },
+  {
+    id: "k2-40",
+    section: "k2",
+    sectionLabel: "Kafli 2 – Gervigreind",
+    type: "mcq",
+    prompt: "Hvaða fullyrðing um „greind“ úr kafla 2 er réttust?",
+    options: [
+      "Greind er eingöngu það sama og greindarvísitala",
+      "Greind er regnhlífarhugtak og getur birst í fleiri en einni mynd",
+      "Greind er óþarft hugtak þegar rætt er um gervigreind",
+      "Greind er aðeins mæld með Turing-prófinu"
+    ],
+    answer: "Greind er regnhlífarhugtak og getur birst í fleiri en einni mynd",
+    explanation: "Í efninu er gervigreind sjálf sett fram sem regnhlífarhugtak yfir margar aðferðir og birtingarmyndir."
+  },
+  {
+    id: "k2-41",
+    section: "k2",
+    sectionLabel: "Kafli 2 – Gervigreind",
+    type: "mcq",
+    prompt: "Hvaða dæmi var notað í glærum til að sýna að gervigreindarlausnir hafa sigrað heimsmeistara eða sérfræðinga í afmörkuðum verkefnum?",
+    options: [
+      "Sudoku, Monopoly og Minecraft",
+      "Skák, Jeopardy og Go / WeiQi",
+      "Brids, poker og fótboltaþjálfun",
+      "Forritun, hönnun og vélritun"
+    ],
+    answer: "Skák, Jeopardy og Go / WeiQi",
+    explanation: "Þetta eru klassísk dæmi sem eru tengd framþróun gervigreindar í afmörkuðum verkefnum."
+  },
+  {
+    id: "k2-42",
+    section: "k2",
+    sectionLabel: "Kafli 2 – Gervigreind",
+    type: "mcq",
+    prompt: "Hvaða hugtak lýsir best kerfi sem getur búið til nýtt efni, til dæmis texta eða myndir, frekar en að einungis greina fyrirliggjandi gögn?",
+    options: [
+      "Vélrænt nám (ML)",
+      "Spunagreind (Generative AI)",
+      "Snjallþjónusta (Intelligent Agent)",
+      "Vélþýðing (Machine Translation)"
+    ],
+    answer: "Spunagreind (Generative AI)",
+    explanation: "Spunagreind býr til nýtt efni, til dæmis texta eða myndir."
+  },
+  {
+    id: "k2-43",
+    section: "k2",
+    sectionLabel: "Kafli 2 – Gervigreind",
+    type: "mcq",
+    prompt: "Hvaða hugtak lýsir best sjálfstæðri þjónustu sem fylgist með umhverfi, lærir og bregst við til að ná markmiði?",
+    options: [
+      "Spjallmenni (Chatbot)",
+      "Snjallþjónusta (Intelligent Agent)",
+      "Tauganet (Neural Network)",
+      "Talgreining"
+    ],
+    answer: "Snjallþjónusta (Intelligent Agent)",
+    explanation: "Þetta er bein skilgreining á snjallþjónustu í glærunum."
+  },
+  {
+    id: "k2-44",
+    section: "k2",
+    sectionLabel: "Kafli 2 – Gervigreind",
+    type: "mcq",
+    prompt: "Hvaða hugtak lýsir best tölvuvæddri þjónustu sem líkist mannlegum samskiptum í stuttum spurningum og svörum?",
+    options: [
+      "Spjallmenni (Chatbot)",
+      "Vélmenni (Robot)",
+      "Sjálfvirk útvistun",
+      "Rökgreind"
+    ],
+    answer: "Spjallmenni (Chatbot)",
+    explanation: "Spjallmenni eru tölvuvædd þjónusta sem líkist mannlegum samskiptum í formi stuttra spurninga og svara."
+  },
+  {
+    id: "k2-45",
+    section: "k2",
+    sectionLabel: "Kafli 2 – Gervigreind",
+    type: "mcq",
+    prompt: "Hvaða aðferð er líklegust að sé notuð við sjálfvirka þýðingu texta milli tungumála?",
+    options: [
+      "Vélþýðing (Machine Translation)",
+      "Sjálfvirki ráðgjafinn",
+      "Samvinna manns og vélar",
+      "Vélmennafræði"
+    ],
+    answer: "Vélþýðing (Machine Translation)",
+    explanation: "Machine Translation snýst um að þýða texta milli tungumála."
+  },
+  {
+    id: "k2-46",
+    section: "k2",
+    sectionLabel: "Kafli 2 – Gervigreind",
+    type: "mcq",
+    prompt: "Hvaða aðferð er líklegust að sé notuð þegar kerfi þarf að greina mynstur í svindli og aðlagast nýjum gögnum?",
+    options: [
+      "Vélrænt nám (ML)",
+      "Vélþýðing",
+      "Turing-prófið",
+      "Sjálfvirk útvistun"
+    ],
+    answer: "Vélrænt nám (ML)",
+    explanation: "ML er notað til að greina mynstur, spá fyrir um og aðlagast, meðal annars í svindlgreiningu."
+  },
+  {
+    id: "k2-47",
+    section: "k2",
+    sectionLabel: "Kafli 2 – Gervigreind",
+    type: "mcq",
+    prompt: "Hvaða aðferð er líklegust að sé notuð þegar kerfi þarf að bregðast við töluðu eða skrifuðu mannamáli?",
+    options: [
+      "Máltækni (NLP)",
+      "Vélmennafræði",
+      "Rymdargreind",
+      "Greindarvísitala"
+    ],
+    answer: "Máltækni (NLP)",
+    explanation: "NLP snýst um að vinna með talað eða skrifað mannamál."
+  },
+  {
+    id: "k2-48",
+    section: "k2",
+    sectionLabel: "Kafli 2 – Gervigreind",
+    type: "mcq",
+    prompt: "Stutt dæmisaga: Tryggingafélag vill innleiða lausn sem getur áætlað verð á flóknum tryggingavörum þó ekki séu allar breytur þekktar fyrirfram. Lausnin á að nýta gögn, læra af fyrri ákvörðunum og bæta sig með tímanum. Hvaða hugtak eða nálgun passar best?",
+    options: [
+      "Snjallþjónusta sem nýtir vélrænt nám",
+      "Vélþýðing með föstum orðalista",
+      "Sjálfvirk útvistun án reglna",
+      "Spjallmenni án gagnalíkans"
+    ],
+    answer: "Snjallþjónusta sem nýtir vélrænt nám",
+    explanation: "Þetta líkist dæmunum um verðlagningu á flóknum vörum og snjallþjónustur sem læra og bæta sig."
+  },
+  {
+    id: "k2-49",
+    section: "k2",
+    sectionLabel: "Kafli 2 – Gervigreind",
+    type: "mcq",
+    prompt: "Stutt dæmisaga: Stór stofnun vill innleiða lausn sem finnur bestu tillögu að næstu aðgerð en yfirmaður þarf alltaf að staðfesta hana áður en hún er framkvæmd. Hvaða Schrage-líkan passar best?",
+    options: [
+      "Sjálfvirki ráðgjafinn",
+      "Samvinna manns og vélar",
+      "Algert sjálfstæði vélar",
+      "Sjálfvirk útvistun"
+    ],
+    answer: "Samvinna manns og vélar",
+    explanation: "Lausnin leggur til bestu lausnina en manneskja staðfestir hana áður en hún er framkvæmd."
+  },
+  {
+    id: "k2-50",
+    section: "k2",
+    sectionLabel: "Kafli 2 – Gervigreind",
+    type: "mcq",
+    prompt: "Stutt dæmisaga: Fyrirtæki vill „setja AI á allt“ en þegar nánar er skoðað eru verkferlar óljósir, undantekningar margar og ákvarðanir mismunandi eftir deildum. Hver er líklegasta áskorunin samkvæmt glærunum?",
+    options: [
+      "Gervigreind virkar aðeins á ensku",
+      "Illa skilgreindir viðskiptaferlar gera innleiðingu erfiða",
+      "Snjallþjónustur geta ekki svarað samtíma fyrirspurnum",
+      "Vélrænt nám hentar aðeins í verksmiðjur"
+    ],
+    answer: "Illa skilgreindir viðskiptaferlar gera innleiðingu erfiða",
+    explanation: "Glærurnar nefna sérstaklega að illa skilgreindir og síbreytilegir ferlar geri innleiðingu erfiða."
+  },
+  {
+    id: "k2-51",
+    section: "k2",
+    sectionLabel: "Kafli 2 – Gervigreind",
+    type: "mcq",
+    prompt: "Stutt dæmisaga: Netbanki vill veita þjónustu allan sólarhringinn, svara mörgum fyrirspurnum samtímis og bæta eftirlit með svindli. Hvaða rök fyrir gervigreind passa best við þessa lýsingu?",
+    options: [
+      "Hún er fyrst og fremst skemmtileg tækni",
+      "Hún getur svarað mörgum samtíma fyrirspurnum og unnið úr stórum gagnamengjum",
+      "Hún útilokar allan kostnað við innleiðingu",
+      "Hún gerir gögn óþörf"
+    ],
+    answer: "Hún getur svarað mörgum samtíma fyrirspurnum og unnið úr stórum gagnamengjum",
+    explanation: "Virði gervigreindar er meðal annars að geta svarað mörgum samtímis og unnið úr stórum gagnamengjum."
+  },
+  {
+    id: "k2-52",
+    section: "k2",
+    sectionLabel: "Kafli 2 – Gervigreind",
+    type: "mcq",
+    prompt: "Ef hópur innleiðir gervigreindarlausn í verkefni, hvað ætti hann helst að geta útskýrt samkvæmt glærunum?",
+    options: [
+      "Að gervigreind sé alltaf ódýrari en hefðbundnar lausnir",
+      "Hvaða tegund ákvörðunar er verið að sjálfvirknivæða og hvers vegna",
+      "Að vélrænt nám og djúpnám séu nákvæmlega sama hugtak",
+      "Að spunagreind leysi allar skipulagsáskoranir"
+    ],
+    answer: "Hvaða tegund ákvörðunar er verið að sjálfvirknivæða og hvers vegna",
+    explanation: "Í glærunum er lögð áhersla á tegund ákvarðana, áhættu, kostnað og áhrif á ákvörðunartöku."
+  },
+  {
+    id: "k2-53",
+    section: "k2",
+    sectionLabel: "Kafli 2 – Gervigreind",
+    type: "mcq",
+    prompt: "Hver væri sterkust fagleg röksemd í hópverkefni fyrir því að velja ekki fullsjálfvirka lausn?",
+    options: [
+      "Af því að gervigreind er of ný til að nota hana",
+      "Af því að mannleg yfirferð getur verið mikilvæg þegar áhætta eða áhrif ákvarðana eru mikil",
+      "Af því að spjallmenni eru alltaf betri en önnur líkön",
+      "Af því að reglur mega aldrei vera skýrar"
+    ],
+    answer: "Af því að mannleg yfirferð getur verið mikilvæg þegar áhætta eða áhrif ákvarðana eru mikil",
+    explanation: "Þegar áhætta er mikil eða áhrif ákvarðana veruleg getur mannleg yfirferð og samþykki skipt miklu máli."
+  }
+];
+
+questionBank.push(...kafli2QuestionBankExtra);
+
 const countOptions = [10, 15, 20, 30, 40, 50, 60, 80, 100, 120, 150, "all"];
 function shuffleArray(items) {
   const arr = [...items];
