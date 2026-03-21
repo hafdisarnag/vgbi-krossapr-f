@@ -3321,6 +3321,7 @@ const chapter1ReviewQuestions = [
     explanation: "Þegar fólk er ekki að horfa á verkefnið með sama skilningi verður auðvelt að lenda í misskilningi og röngum væntingum."
   }
 ];
+questionBank.push(...chapter1ReviewQuestions);
 
 const countOptions = [10, 15, 20, 30, 40, 50, 60, 80, 100, 120, 150, "all"];
 function shuffleArray(items) {
