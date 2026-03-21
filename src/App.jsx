@@ -1,6 +1,7 @@
 import React, { useMemo, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { BookOpen, Brain, Database, Warehouse, Search, Network, Cpu, Sigma, Trophy, RefreshCw, Filter, CheckCircle2, XCircle, Layers3 } from "lucide-react";
+import { Analytics } from "@vercel/analytics/next";
 
 const sections = [
   { id: "all", title: "Allt efnið", subtitle: "Blandað úr öllum glærunum", icon: Layers3 },
