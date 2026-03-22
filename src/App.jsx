@@ -3813,6 +3813,463 @@ const kafli2QuestionBankExtra = [
 
 questionBank.push(...kafli2QuestionBankExtra);
 
+const kafli3QuestionBankExtra = [
+  {
+    id: "k3-22",
+    section: "k3",
+    sectionLabel: "Kafli 3 – Gögn og gagnavinnsla",
+    type: "mcq",
+    prompt: "Hvaða lýsing passar best við skipulögð gögn?",
+    options: [
+      "Gögn með skýra uppbyggingu sem auðveldara er að vinna með",
+      "Gögn sem eru alltaf texti af samfélagsmiðlum",
+      "Gögn sem ekki er hægt að tengja saman",
+      "Gögn sem innihalda eingöngu myndir og hljóð"
+    ],
+    answer: "Gögn með skýra uppbyggingu sem auðveldara er að vinna með",
+    explanation: "Skipulögð gögn hafa skýra uppbyggingu og eru yfirleitt auðveldari í vinnslu og greiningu."
+  },
+  {
+    id: "k3-23",
+    section: "k3",
+    sectionLabel: "Kafli 3 – Gögn og gagnavinnsla",
+    type: "mcq",
+    prompt: "Hvaða lýsing passar best við hálf skipulögð gögn?",
+    options: [
+      "Gögn sem hafa enga byggingu yfirleitt",
+      "Gögn sem hafa einhverja uppbyggingu en ekki jafn fasta og skipulögð gögn",
+      "Gögn sem eru alltaf í töflureikni",
+      "Gögn sem er ómögulegt að greina"
+    ],
+    answer: "Gögn sem hafa einhverja uppbyggingu en ekki jafn fasta og skipulögð gögn",
+    explanation: "Hálf skipulögð gögn hafa ákveðna uppbyggingu, en hún er ekki jafn föst og í hefðbundnum töflugögnum."
+  },
+  {
+    id: "k3-24",
+    section: "k3",
+    sectionLabel: "Kafli 3 – Gögn og gagnavinnsla",
+    type: "mcq",
+    prompt: "Hvaða atriði lýsir best timeliness eða tímanleika gagna?",
+    options: [
+      "Að gögnin séu uppfærð og viðeigandi",
+      "Að gögnin séu örugg gagnvart netárásum",
+      "Að gögnin séu alltaf úr mörgum kerfum",
+      "Að gögnin séu flokkuð sem nominal"
+    ],
+    answer: "Að gögnin séu uppfærð og viðeigandi",
+    explanation: "Tímanleiki snýst um að gögn séu nægilega ný og viðeigandi þegar þau eru notuð."
+  },
+  {
+    id: "k3-25",
+    section: "k3",
+    sectionLabel: "Kafli 3 – Gögn og gagnavinnsla",
+    type: "mcq",
+    prompt: "Hvaða gæðaeiginleiki snýst um að öll gögn séu samræmd, tengd og án frávika?",
+    options: [
+      "Áreiðanleiki",
+      "Samræmi",
+      "Auðgun",
+      "Aðgengi"
+    ],
+    answer: "Samræmi",
+    explanation: "Samræmi snýst um að skilgreiningar og gögn passi saman og stangist ekki á milli kerfa eða sviða."
+  },
+  {
+    id: "k3-26",
+    section: "k3",
+    sectionLabel: "Kafli 3 – Gögn og gagnavinnsla",
+    type: "mcq",
+    prompt: "Hvaða flokkun gagna á best við þegar gildi eru bara nöfn eða flokkar án innbyrðis röðunar?",
+    options: [
+      "Ordinal",
+      "Ratio",
+      "Nominal",
+      "Interval"
+    ],
+    answer: "Nominal",
+    explanation: "Nominal gögn eru flokkar eða heiti án innbyrðis röðunar."
+  },
+  {
+    id: "k3-27",
+    section: "k3",
+    sectionLabel: "Kafli 3 – Gögn og gagnavinnsla",
+    type: "mcq",
+    prompt: "Hvaða flokkun gagna á best við þegar gildi hafa röð eins og stutt, miðlungs og langt?",
+    options: [
+      "Nominal",
+      "Ordinal",
+      "Interval",
+      "Structured"
+    ],
+    answer: "Ordinal",
+    explanation: "Ordinal gögn hafa röð, en bilið á milli gilda er ekki endilega jafnt."
+  },
+  {
+    id: "k3-28",
+    section: "k3",
+    sectionLabel: "Kafli 3 – Gögn og gagnavinnsla",
+    type: "mcq",
+    prompt: "Hvert er meginmarkmið forvinnslu gagna samkvæmt glærunum?",
+    options: [
+      "Að gera gögn tilbúin til notkunar í greiningum",
+      "Að geyma öll gögn án breytinga",
+      "Að eyða öllum auka færslum sjálfkrafa",
+      "Að breyta öllum gögnum í óskipulögð gögn"
+    ],
+    answer: "Að gera gögn tilbúin til notkunar í greiningum",
+    explanation: "Forvinnsla snýst um að undirbúa gögn svo þau nýtist betur í greiningum og líkönum."
+  },
+  {
+    id: "k3-29",
+    section: "k3",
+    sectionLabel: "Kafli 3 – Gögn og gagnavinnsla",
+    type: "mcq",
+    prompt: "Hvaða atriði er líklegast ástæða fyrir því að gagnavinnsla verði tímafrek?",
+    options: [
+      "Gögn þurfa aðeins að vera afrituð",
+      "Þarf að skilja, tengja og laga gögnin",
+      "Öll gögn eru sjálfkrafa tilbúin til greininga",
+      "Skýrslur útiloka þörf fyrir forvinnslu"
+    ],
+    answer: "Þarf að skilja, tengja og laga gögnin",
+    explanation: "Gagnavinnsla er oft tímafrek því gögn þarf að skilja, tengja saman, hreinsa og laga."
+  },
+  {
+    id: "k3-30",
+    section: "k3",
+    sectionLabel: "Kafli 3 – Gögn og gagnavinnsla",
+    type: "mcq",
+    prompt: "Hvaða aðferð er líklegust þegar gagnamengi er of stórt og of þungt í vinnslu?",
+    options: [
+      "Að nota hlutmengi",
+      "Að bæta við fleiri flokkum",
+      "Að nota eingöngu hágildi",
+      "Að sleppa allri hreinsun"
+    ],
+    answer: "Að nota hlutmengi",
+    explanation: "Þegar gagnamengi er mjög stórt getur verið gagnlegt að vinna með hlutmengi þess."
+  },
+  {
+    id: "k3-31",
+    section: "k3",
+    sectionLabel: "Kafli 3 – Gögn og gagnavinnsla",
+    type: "mcq",
+    prompt: "Hvaða fullyrðing lýsir best normalization í samhengi kafla 3?",
+    options: [
+      "Aðferð til að samræma gögn milli mismunandi gagnauppspretta",
+      "Aðferð til að auka stærð gagnamengis",
+      "Aðferð til að finna miðgildi",
+      "Aðferð til að umbreyta skipulögðum gögnum í óskipulögð"
+    ],
+    answer: "Aðferð til að samræma gögn milli mismunandi gagnauppspretta",
+    explanation: "Hér er normalization notað í merkingunni að samræma og laga gögn svo þau passi betur saman."
+  },
+
+  {
+    id: "k3-32",
+    section: "k3",
+    sectionLabel: "Kafli 3 – Gögn og gagnavinnsla",
+    type: "mcq",
+    prompt: "Hvaða aðferð er líklegust notuð þegar gagnamengi eru ekki með jafna dreifingu og þarf að jafna þau fyrir betri spálíkön?",
+    options: [
+      "Balancing",
+      "Range",
+      "Mode",
+      "Timeliness"
+    ],
+    answer: "Balancing",
+    explanation: "Balancing er notað til að jafna gagnamengi þegar dreifing flokka eða gilda er mjög skökk."
+  },
+  {
+    id: "k3-33",
+    section: "k3",
+    sectionLabel: "Kafli 3 – Gögn og gagnavinnsla",
+    type: "mcq",
+    prompt: "Hvaða hugtak lýsir því best að tengja gögn úr mörgum áttum saman í forvinnslu?",
+    options: [
+      "Data blending",
+      "Quartile",
+      "Accessibility",
+      "Median"
+    ],
+    answer: "Data blending",
+    explanation: "Data blending er notað þegar gögn frá mörgum áttum eru tengd saman í eitt greiningarmengi."
+  },
+  {
+    id: "k3-34",
+    section: "k3",
+    sectionLabel: "Kafli 3 – Gögn og gagnavinnsla",
+    type: "mcq",
+    prompt: "Í dæminu um brottfall nemenda var hvaða atriði sett fram sem kjarni málsins?",
+    options: [
+      "Að velja rétt mælaborð",
+      "Gögn eru kjarni málsins",
+      "Að nota eingöngu óskipulögð gögn",
+      "Að nota aðeins rauntímagögn"
+    ],
+    answer: "Gögn eru kjarni málsins",
+    explanation: "Í dæminu var lögð áhersla á að gögnin sjálf væru grunnurinn að því að geta spáð og brugðist við."
+  },
+  {
+    id: "k3-35",
+    section: "k3",
+    sectionLabel: "Kafli 3 – Gögn og gagnavinnsla",
+    type: "mcq",
+    prompt: "Hver var niðurstaðan í dæminu um brottfall nemenda?",
+    options: [
+      "Líkanið spáði rétt fyrir um 50 prósent þeirra sem hætta",
+      "Líkanið spáði rétt fyrir um 80 prósent þeirra sem hætta",
+      "Líkanið spáði rétt fyrir um alla sem hætta",
+      "Ekki tókst að byggja spálíkan"
+    ],
+    answer: "Líkanið spáði rétt fyrir um 80 prósent þeirra sem hætta",
+    explanation: "Í dæminu var nefnt að líkanið næði að finna stóran hluta þeirra sem líklegir væru til að hætta."
+  },
+  {
+    id: "k3-36",
+    section: "k3",
+    sectionLabel: "Kafli 3 – Gögn og gagnavinnsla",
+    type: "mcq",
+    prompt: "Hvaða þrjú V voru upphaflega notuð til að lýsa gagnagnótt?",
+    options: [
+      "Value, veracity og variability",
+      "Volume, variety og velocity",
+      "Variance, value og volume",
+      "Velocity, validity og visualization"
+    ],
+    answer: "Volume, variety og velocity",
+    explanation: "Þetta eru klassísku þrjú V-in sem fyrst voru notuð um Big Data."
+  },
+  {
+    id: "k3-37",
+    section: "k3",
+    sectionLabel: "Kafli 3 – Gögn og gagnavinnsla",
+    type: "mcq",
+    prompt: "Hvaða atriði var síðar bætt við sem eitt af viðbótar V hugtökunum í gagnagnótt?",
+    options: [
+      "Veracity",
+      "Visualization",
+      "Versioning",
+      "Validation only"
+    ],
+    answer: "Veracity",
+    explanation: "Veracity tengist áreiðanleika og sannleiksgildi gagna og er eitt af viðbótar V-unum."
+  },
+  {
+    id: "k3-38",
+    section: "k3",
+    sectionLabel: "Kafli 3 – Gögn og gagnavinnsla",
+    type: "mcq",
+    prompt: "Hvaða fullyrðing um gagnagnótt er næst glærunum?",
+    options: [
+      "Söfnun mikils magns gagna ein og sér skapar sjálfkrafa virði",
+      "Virði verður fyrst til þegar tekst að greina þetta mikla magn",
+      "Gagnagnótt snýst eingöngu um geymslu gagna",
+      "Big Data vísar bara til samfélagsmiðlagagna"
+    ],
+    answer: "Virði verður fyrst til þegar tekst að greina þetta mikla magn",
+    explanation: "Mikið gagnamagn eitt og sér skapar ekki virði nema það sé unnið úr því og það nýtt."
+  },
+  {
+    id: "k3-39",
+    section: "k3",
+    sectionLabel: "Kafli 3 – Gögn og gagnavinnsla",
+    type: "mcq",
+    prompt: "Hvaða atriði er nefnt sem ein af helstu áskorunum við mikla gagnagnótt?",
+    options: [
+      "Að öll gögn séu of skipulögð",
+      "Stjórnun og siðferði varðandi meðhöndlun",
+      "Að gagnamagn sé of lítið",
+      "Skortur á töflureiknum"
+    ],
+    answer: "Stjórnun og siðferði varðandi meðhöndlun",
+    explanation: "Stjórnun gagna og siðferðileg meðferð þeirra eru mikilvægar áskoranir í gagnagnótt."
+  },
+  {
+    id: "k3-40",
+    section: "k3",
+    sectionLabel: "Kafli 3 – Gögn og gagnavinnsla",
+    type: "mcq",
+    prompt: "Hvaða þáttur stuðlar samkvæmt glærunum að velgengni verkefna tengdra gagnagnótt?",
+    options: [
+      "Að viðskiptahlið og UT hafi ólík markmið",
+      "Stuðningur frá stjórnendum",
+      "Að sleppa menningu fyrirtækisins",
+      "Að nota nýjustu tækni óháð þörf"
+    ],
+    answer: "Stuðningur frá stjórnendum",
+    explanation: "Stuðningur stjórnenda og skýr stefna eru lykilatriði í vel heppnuðum verkefnum."
+  },
+  {
+    id: "k3-41",
+    section: "k3",
+    sectionLabel: "Kafli 3 – Gögn og gagnavinnsla",
+    type: "mcq",
+    prompt: "Hvaða aðstæður benda helst til þess að ný gagnagnóttarlausn geti skapað virði?",
+    options: [
+      "Þegar núverandi lausn ræður vel við allt magn og alla hraða",
+      "Þegar ný gögn berast of hratt eða of seint fyrir núverandi lausn",
+      "Þegar öll gögn fylgja sömu stöðlum og engin áskorun er til staðar",
+      "Þegar engin viðskiptaleg þörf er til staðar"
+    ],
+    answer: "Þegar ný gögn berast of hratt eða of seint fyrir núverandi lausn",
+    explanation: "Ný lausn getur skapað virði þegar hraði, magn eða fjölbreytni gagna fer fram úr getu eldri lausna."
+  },
+
+  {
+    id: "k3-42",
+    section: "k3",
+    sectionLabel: "Kafli 3 – Gögn og gagnavinnsla",
+    type: "mcq",
+    prompt: "Fyrirtæki safnar gögnum úr skynjurum á sekúndufresti, viðskiptum úr sölukerfi og kvörtunum úr frjálsum texta. Hvaða samsetning lýsir best áskoruninni?",
+    options: [
+      "Aðallega nominal og ekkert annað",
+      "Volume og variety",
+      "Ordinal og median",
+      "Range og mode"
+    ],
+    answer: "Volume og variety",
+    explanation: "Hér er bæði mikið magn gagna og mikil fjölbreytni í gerðum gagna."
+  },
+  {
+    id: "k3-43",
+    section: "k3",
+    sectionLabel: "Kafli 3 – Gögn og gagnavinnsla",
+    type: "mcq",
+    prompt: "Greining sýnir miðgildi, meðaltal og fjórðungsmörk fyrir tekjur viðskiptavina. Hvaða gerð greiningar er þetta líklegast fyrst og fremst?",
+    options: [
+      "Lýsandi tölfræðigreining",
+      "Forspárgreining",
+      "Textavinnsla",
+      "Balancing"
+    ],
+    answer: "Lýsandi tölfræðigreining",
+    explanation: "Miðgildi, meðaltal og fjórðungsmörk eru dæmi um lýsandi tölfræðilega greiningu."
+  },
+  {
+    id: "k3-44",
+    section: "k3",
+    sectionLabel: "Kafli 3 – Gögn og gagnavinnsla",
+    type: "mcq",
+    prompt: "Viðskiptaaðili spyr hvers vegna tvær skýrslur sýna ólíka niðurstöðu fyrir sama tímabil. Í ljós kemur að deildir nota mismunandi skilgreiningar á virkum viðskiptavini. Hvaða hugtak er helst í húfi?",
+    options: [
+      "Consistency",
+      "Velocity",
+      "Quartile",
+      "Range"
+    ],
+    answer: "Consistency",
+    explanation: "Þetta er dæmi um skort á samræmi í skilgreiningum og því consistency vandamál."
+  },
+  {
+    id: "k3-45",
+    section: "k3",
+    sectionLabel: "Kafli 3 – Gögn og gagnavinnsla",
+    type: "mcq",
+    prompt: "Greiningarteymi vill finna samband milli auglýsingakostnaðar og sölu til að meta hvort breyting á öðru skýri hitt að hluta. Hvaða aðferð passar best?",
+    options: [
+      "Aðhvarfsgreining",
+      "Nominal flokkun",
+      "Balancing",
+      "Normalization eingöngu"
+    ],
+    answer: "Aðhvarfsgreining",
+    explanation: "Aðhvarfsgreining er notuð til að meta samband milli breyta og hvort önnur skýri hina."
+  },
+  {
+    id: "k3-46",
+    section: "k3",
+    sectionLabel: "Kafli 3 – Gögn og gagnavinnsla",
+    type: "mcq",
+    prompt: "Hvaða aðstæður styðja best við að nota nýja gagnagnóttarlausn frekar en hefðbundið gagnavöruhús eitt og sér?",
+    options: [
+      "Þegar núverandi lausn vinnur hraða, magn og fjölbreytni án vandræða",
+      "Þegar nýjar gagnalindir og hraði gagna fara fram úr getu núverandi lausnar",
+      "Þegar engin viðskiptaspurning liggur fyrir",
+      "Þegar aðeins er unnið með lítil og stöðug töflugögn"
+    ],
+    answer: "Þegar nýjar gagnalindir og hraði gagna fara fram úr getu núverandi lausnar",
+    explanation: "Þá getur ný gagnagnóttarlausn orðið réttlætanleg og skapað virði."
+  },
+  {
+    id: "k3-47",
+    section: "k3",
+    sectionLabel: "Kafli 3 – Gögn og gagnavinnsla",
+    type: "mcq",
+    prompt: "Í verkefni um brottfall nemenda nær líkan að finna stóran hluta þeirra sem eru líklegir til að hætta. Hvaða viðskiptalega gildi er líklegast að glærurnar vilji draga fram?",
+    options: [
+      "Að hægt sé að bregðast fyrr við með markvissum úrræðum",
+      "Að ekki þurfi lengur mannlega túlkun",
+      "Að öll gögn verði sjálfkrafa rétt",
+      "Að samhengið skipti minna máli en tæknin"
+    ],
+    answer: "Að hægt sé að bregðast fyrr við með markvissum úrræðum",
+    explanation: "Virðið felst í að geta gripið fyrr inn í og brugðist markvisst við."
+  },
+  {
+    id: "k3-48",
+    section: "k3",
+    sectionLabel: "Kafli 3 – Gögn og gagnavinnsla",
+    type: "mcq",
+    prompt: "Hvaða fullyrðing um gagnagæði er best?",
+    options: [
+      "Gagnagæði skipta helst máli eftir að líkan er tilbúið",
+      "Slök gagnagæði geta rýrt bæði greiningu og ákvarðanir",
+      "Gagnagæði skipta bara máli í óskipulögðum gögnum",
+      "Gagnagæði snúast aðeins um aðgangsheimildir"
+    ],
+    answer: "Slök gagnagæði geta rýrt bæði greiningu og ákvarðanir",
+    explanation: "Léleg gagnagæði hafa bein áhrif bæði á greiningar og ákvarðanatöku."
+  },
+  {
+    id: "k3-49",
+    section: "k3",
+    sectionLabel: "Kafli 3 – Gögn og gagnavinnsla",
+    type: "mcq",
+    prompt: "Breytan hitastig í gráðum á Celsíus er best flokkuð sem hvaða mælikvarði?",
+    options: [
+      "Nominal",
+      "Ordinal",
+      "Interval",
+      "Ratio"
+    ],
+    answer: "Interval",
+    explanation: "Celsíus hefur jöfn bil milli gilda en núllpunkturinn er ekki algert núll, þannig að þetta eru interval gögn."
+  },
+  {
+    id: "k3-50",
+    section: "k3",
+    sectionLabel: "Kafli 3 – Gögn og gagnavinnsla",
+    type: "mcq",
+    prompt: "Hvaða svar lýsir best muninum á skipulögðum og óskipulögðum gögnum í samhengi við gagnavinnslu?",
+    options: [
+      "Skipulögð gögn eru alltaf mikilvægari en óskipulögð",
+      "Óskipulögð gögn hafa yfirleitt minna viðskiptalegt gildi",
+      "Skipulögð gögn hafa fastara form en óskipulögð krefjast oftar meiri forvinnslu",
+      "Það er enginn raunverulegur munur í vinnslu þeirra"
+    ],
+    answer: "Skipulögð gögn hafa fastara form en óskipulögð krefjast oftar meiri forvinnslu",
+    explanation: "Skipulögð gögn eru fastari í formi en óskipulögð gögn þurfa oftar meiri vinnslu áður en þau nýtast."
+  },
+  {
+    id: "k3-51",
+    section: "k3",
+    sectionLabel: "Kafli 3 – Gögn og gagnavinnsla",
+    type: "mcq",
+    prompt: "Hvað bendir sterkast til þess að verkefni í gagnagnótt fái góðan hljómgrunn og eigi meiri líkur á árangri?",
+    options: [
+      "Að aðeins tækniteymið skilji markmiðin",
+      "Stuðningur stjórnenda og skýr tenging við viðskiptaþarfir",
+      "Að tæknin sé ný og vinsæl",
+      "Að gögnunum sé safnað án skýrra nota"
+    ],
+    answer: "Stuðningur stjórnenda og skýr tenging við viðskiptaþarfir",
+    explanation: "Stuðningur stjórnenda og skýr tenging við raunverulegar viðskiptaþarfir eykur líkur á árangri."
+  }
+];
+
+questionBank.push(...kafli3QuestionBankExtra);
+
 const countOptions = [10, 15, 20, 30, 40, 50, 60, 80, 100, 120, 150, "all"];
 function shuffleArray(items) {
   const arr = [...items];
